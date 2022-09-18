@@ -1,0 +1,15 @@
+.skill {
+    width: 250px;
+    background-color: #ebf694;
+    display: flex;
+}
+
+.icon {
+    height: 60px;
+    width: 60px;
+    background-color: #f748e0;
+}
+
+.description {
+
+}
