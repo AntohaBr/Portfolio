@@ -1,5 +1,5 @@
 
-.job{
+.job {
     width: 350px;
     background-color: #00f6ba;
     display: flex;
@@ -8,18 +8,25 @@
     text-align: center;
 }
 
-.picture{
+.picture {
     height: 200px;
     width: 350px;
     background-color: #7bf769;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.button{
+.button {
     width: 120px;
     height: 30px;
+    background: #105cff;
+    border: 0;
+    font-size: larger;
 }
 
 
-.description{
+.description {
 
 }

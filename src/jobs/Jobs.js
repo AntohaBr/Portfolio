@@ -10,8 +10,8 @@ function Jobs() {
             <div className={`${styleContainer.container} ${style.jobsContainer}`}>
                 <h2 className={style.title}>Jobs</h2>
                 <div className={style.jobs}>
-                    <Job  title={'Todolist'} description={'Todolist to optimize working hours'} />
-                    <Job  title={'Social network'} description={'Social network for meeting people and communicating with them'}/>
+                    <Job  picture={'picture'} title={'Todolist'} description={'Todolist to optimize working hours.'} />
+                    <Job  picture={'picture'} title={'Social network'} description={'Social network for meeting people and communicating with them.'}/>
                 </div>
             </div>
         </div>
