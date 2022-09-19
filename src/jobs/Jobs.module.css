@@ -1,25 +1,24 @@
 
-.skillsBlock{
+.jobsBlock{
     height: 100vh;
-    background-color: #b6adf7;
+    background-color: #e3f791;
 }
 
-.skillsContainer{
+.jobsContainer{
     align-items:flex-start;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
 }
-.title{
-background-color: #105cff;
 
+.title{
+    background-color: #ff4941;
 }
 
-.skills{
+.jobs{
     border: 1px solid;
     width: 100%;
     display: flex;
-justify-content: space-between;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
-
