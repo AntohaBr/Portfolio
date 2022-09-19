@@ -6,7 +6,6 @@ function Job(props) {
     return (
         <div className={style.job}>
             <div className={style.picture}>
-                {props.picture}
                 <button className={style.button}>Look</button>
             </div>
             <h3>{props.title}</h3>
