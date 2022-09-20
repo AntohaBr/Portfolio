@@ -1,6 +1,6 @@
 
 .hireBlock{
-    height: 100vh;
+    height: 50vh;
     background-color: #00bcf7;
 }
 
@@ -8,11 +8,12 @@
     align-items: flex-start;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+   justify-content: space-around;
 }
 
 .title{
     background-color: #c729ff;
+    font-size: 2em;
 }
 
 .button{

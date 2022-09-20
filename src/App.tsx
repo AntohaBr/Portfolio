@@ -5,6 +5,7 @@ import Main from "./main/Main";
 import Skills from "./skills/Skills";
 import Jobs from "./jobs/Jobs";
 import Hire from "./hire/Hire";
+import Contact from "./contacts/Contacts";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
             <Skills/>
             <Jobs/>
             <Hire/>
+            <Contact/>
         </div>
     );
 }
