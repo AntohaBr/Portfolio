@@ -13,6 +13,62 @@
     background-color: #1798ff;
 }
 
+.inputBlock {
+    border: 1px solid red;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    background-color: #ececec;
+}
+
+.inputBoxOne {
+    /*background-color: #1798ff;*/
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+
+}
+
+.inputBoxToo {
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 20px 0;
+}
+
+.textareaBox {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.inputOne {
+    display: block;
+    height: 100%;
+    background: #e3f791;
+}
+
+.inputToo {
+    display: block;
+    height: 100%;
+    background: antiquewhite;
+}
+
+.textarea {
+    display: block;
+    min-width: 594px;
+    max-width: 594px;
+    min-height: 174px;
+}
+
+
 .button {
     width: 150px;
     height: 40px;
