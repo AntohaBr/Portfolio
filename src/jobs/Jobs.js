@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './Jobs.module.css';
-import styleContainer from "../common/styles/Container.module.css";
 import Job from "./job/Job";
+import styleContainer from "../common/styles/Container.module.css";
 
 
 function Jobs() {
