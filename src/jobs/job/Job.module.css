@@ -1,6 +1,6 @@
 
 .job {
-    width: 320px;
+    width: 250px;
     background-color: #00f6ba;
     display: flex;
     flex-direction: column;
@@ -10,10 +10,10 @@
 
 .picture {
     height: 320px;
-    width: 320px;
+    width: 100%;
     background-color: #7bf769;
     display: flex;
-    justify-content: space-around;
+   justify-content: center;
     align-items: center;
 }
 

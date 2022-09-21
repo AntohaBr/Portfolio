@@ -1,19 +1,20 @@
 
 .hireBlock{
-    height: 50vh;
+    height: 100vh;
     background-color: #00bcf7;
 }
 
 .hireContainer {
-    align-items: flex-start;
     flex-direction: column;
     align-items: center;
-   justify-content: space-around;
+  justify-content: space-around;
+
 }
 
 .title{
     background-color: #c729ff;
     font-size: 2em;
+    text-align: center;
 }
 
 .button{

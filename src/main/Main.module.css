@@ -1,11 +1,12 @@
 .mainBlock {
-height: 100vh;
+min-height: 100vh;
     background-color: #bfffb6;
 }
 
 .text{
 width: 300px;
     background-color: #bfffb6;
+    text-align: center;
 }
 
 .photo{
