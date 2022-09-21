@@ -25,16 +25,13 @@
 }
 
 .inputBoxOne {
-    /*background-color: #1798ff;*/
     height: 40px;
     display: flex;
     flex-direction: column;
     align-items: stretch;
-
-
 }
 
-.inputBoxToo {
+.inputBoxTwo {
     height: 40px;
     display: flex;
     flex-direction: column;
@@ -55,7 +52,7 @@
     background: #e3f791;
 }
 
-.inputToo {
+.inputTwo {
     display: block;
     height: 100%;
     background: antiquewhite;
