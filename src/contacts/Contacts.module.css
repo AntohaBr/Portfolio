@@ -1,6 +1,6 @@
 
 .contactsBlock {
-    height: 100vh;
+    max-height: 100vh;
     background-color: #c0f7c6;
 }
 
@@ -14,58 +14,19 @@
     background-color: #1798ff;
 }
 
-.inputBlock {
+.contact {
     border: 1px solid red;
-    width: 600px;
-    height: 300px;
+    width: 250px;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
     justify-content: space-between;
-    background-color: #ececec;
+    margin-bottom: 20px;
 }
 
-.inputBoxOne {
-    height: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
+.input {
+    height: 15px;
+    margin-bottom: 10px;
 }
-
-.inputBoxTwo {
-    height: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    margin: 20px 0;
-}
-
-.textareaBox {
-    height: 180px;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-}
-
-.inputOne {
-    display: block;
-    height: 100%;
-    background: #e3f791;
-}
-
-.inputTwo {
-    display: block;
-    height: 100%;
-    background: antiquewhite;
-}
-
-.textarea {
-    display: block;
-    min-width: 594px;
-    max-width: 594px;
-    min-height: 174px;
-}
-
 
 .button {
     width: 150px;
@@ -73,4 +34,5 @@
     background: #105cff;
     border: 0;
     font-size: larger;
+    margin-bottom: 10px;
 }

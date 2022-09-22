@@ -1,17 +1,19 @@
 
 .footerBlock {
-    min-height: 40vh;
+    min-height: 25vh;
     background-color: #969926;
 }
 
 .footerContainer {
     flex-direction: column;
-    justify-content: space-around;
 }
 
+.title{
+    background-color: honeydew;
+}
 .box {
     border: 1px solid;
-    width: 55%;
+    width: 250px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -22,4 +24,10 @@
     background-color: #c0f6a3;
     width: 30px;
     height: 30px;
+}
+
+.text{
+    background-color: honeydew;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }

@@ -8,13 +8,11 @@ function Contact() {
         <div className={style.contactsBlock}>
             <div className={`${styleContainer.container} ${style.contactsContainer}`}>
                 <h2 className={style.title}>Contact</h2>
-                <div className={style.inputBlock}>
-                    <form>
-                        <div className={style.inputBoxOne}><input className={style.inputOne}/></div>
-                        <div className={style.inputBoxTwo}><input className={style.inputTwo}/></div>
-                        <div className={style.textareaBox}><textarea className={style.textarea}/></div>
+                    <form className={style.contact}>
+                        <input className={style.input}/>
+                        <input className={style.input}/>
+                        <textarea></textarea>
                     </form>
-                </div>
                 <button className={style.button}>Send Message</button>
             </div>
         </div>
