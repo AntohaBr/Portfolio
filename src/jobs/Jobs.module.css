@@ -1,7 +1,8 @@
 
 .jobsBlock{
     min-height: 100vh;
-    background-color: #e3f791;
+    background-color: #18191d;
+    padding: 50px 0;
 }
 
 .jobsContainer{
@@ -11,7 +12,15 @@
 }
 
 .title{
-    background-color: #ff4941;
+    margin:0 0 30px;
+    font-family: 'Syne', sans-serif;
+    font-size: 30px;
+    line-height: 1.2em;
+    font-weight: 700;
+    color: #fff;
+}
+.title h2{
+    margin: 0;
 }
 
 .jobs{
@@ -21,4 +30,10 @@
     justify-content: space-between;
     flex-wrap: wrap;
     box-sizing: border-box;
+}
+
+@media screen and (max-width:628px) {
+    .jobs {
+        justify-content: center
+    }
 }

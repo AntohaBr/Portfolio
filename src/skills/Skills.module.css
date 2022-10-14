@@ -23,3 +23,8 @@
     box-sizing: border-box;
 }
 
+@media screen and (max-width:940px){
+    .skills {
+        justify-content: center
+    }
+}

@@ -16,11 +16,17 @@
 
 .contact {
     border: 1px solid red;
-    width: 250px;
+    width: 55%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 20px;
+}
+
+@media screen and (max-width:450px) {
+    .contact {
+        width: 100%;
+    }
 }
 
 .input {
@@ -36,3 +42,4 @@
     font-size: larger;
     margin-bottom: 10px;
 }
+
