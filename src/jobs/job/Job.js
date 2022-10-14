@@ -8,7 +8,7 @@ function Job(props) {
             <div className={style.picture}>
                 <button className={style.button}>Look</button>
             </div>
-            <h3>{props.title}</h3>
+            <h3>{props.Title}</h3>
             <span className={style.description}>{props.description}</span>
         </div>
 
