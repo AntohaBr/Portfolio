@@ -1,12 +1,12 @@
 .skill {
     width: 250px;
-    background-color: #ebf694;
+    background-color: #202020;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 20px;
     box-sizing: border-box;
+    padding: 30px 20px 40px 20px;
 }
 
 .icon {
@@ -15,6 +15,18 @@
     background-color: #f748e0;
 }
 
-.description {
+.skillTitle{
+    font-family: 'Syne', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fff;
 
+}
+
+.description {
+    font-family: 'Syne', sans-serif;
+    color: #999;
+    line-height: 1.7em;
+    font-size: 14px;
+    font-weight: 400;
 }

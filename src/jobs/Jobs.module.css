@@ -1,7 +1,7 @@
 
 .jobsBlock{
     min-height: 100vh;
-    background-color: #18191d;
+    background-color: #202020;
     padding: 50px 0;
 }
 
@@ -18,6 +18,8 @@
     justify-content: space-between;
     flex-wrap: wrap;
     box-sizing: border-box;
+    margin-top: 50px;
+    align-items: flex-start;
 }
 
 @media screen and (max-width:628px) {
