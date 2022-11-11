@@ -17,16 +17,15 @@
 
 .skillTitle{
     font-family: 'Syne', sans-serif;
-    font-size: 20px;
+    font-size: 14px;
     margin-bottom: 20px;
     color: #fff;
-
 }
 
-.description {
-    font-family: 'Syne', sans-serif;
-    color: #999;
-    line-height: 1.7em;
-    font-size: 14px;
-    font-weight: 400;
-}
+/*.description {*/
+/*    font-family: 'Syne', sans-serif;*/
+/*    color: #999;*/
+/*    line-height: 1.7em;*/
+/*    font-size: 14px;*/
+/*    font-weight: 400;*/
+/*}*/

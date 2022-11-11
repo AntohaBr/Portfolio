@@ -8,13 +8,11 @@ import todolistImg from '../assets/image/todolost_img.jpg'
 
 function Jobs() {
     const todolist = {
-        color: 'blue',
-        backgroundImage: 'url(&`todolistImg`)',
+        backgroundImage: `url(${todolistImg})`
     };
 
     const socialNetwork = {
-        color: 'blue',
-        backgroundImage: 'url(' + imgUrl + ')',
+        backgroundImage: `url(${socialImg})`
     };
 
     return (
@@ -22,8 +20,8 @@ function Jobs() {
             <div className={`${styleContainer.container} ${style.jobsContainer}`}>
                <Title text={"Projects"}/>
                 <div className={style.jobs}>
-                    <Job  title={'Todolist'} description={'Todolist to optimize working hours.'} />
-                    <Job  title={'Social network'} description={'Social network for meeting people and communicating with them.'}/>
+                    <Job style={todolist} title={'Todolist'} description={'Todolist to optimize working hours.'} />
+                    <Job style={socialNetwork} title={'Social network'} description={'Social network for meeting people and communicating with them.'}/>
                 </div>
             </div>
         </div>

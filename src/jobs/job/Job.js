@@ -5,11 +5,11 @@ import style from './Job.module.css';
 function Job(props) {
     return (
         <div className={style.job}>
-            <div className={style.picture}>
+            <div className={style.picture} style={props.style}>
                 <button className={style.button}>Look</button>
             </div>
             <div className={style.jobInfo}>
-                <h5 className={style.jobTitle}>{props.title}</h5>
+                <h3 className={style.jobTitle}>{props.title}</h3>
                 <span className={style.description}>{props.description}</span>
             </div>
 
