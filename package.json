@@ -2,7 +2,7 @@
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
-   "homepage": "https://AntohaBr.github.io/Portfolio",
+  "homepage": "https://AntohaBr.github.io/Portfolio",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
@@ -11,6 +11,7 @@
     "@types/node": "^16.7.13",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "node-sass": "^8.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -44,6 +45,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pagyarn add gh-pageses": "^4.0.0"
+    "gh-pages": "^4.0.0"
   }
 }
