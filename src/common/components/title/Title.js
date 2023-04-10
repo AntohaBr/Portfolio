@@ -1,12 +1,13 @@
-import React from 'react';
-import style from './Title.module.css';
+import React from 'react'
+import s from './Title.module.scss'
+
 
 function Title(props) {
     return (
-        <div className={style.title}>
+        <div className={s.title}>
             <h2>{props.text}</h2>
         </div>
-    );
+    )
 }
 
-export default Title;
+export default Title
