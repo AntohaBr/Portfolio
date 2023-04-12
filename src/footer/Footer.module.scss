@@ -1,0 +1,44 @@
+@import '../common/styles/sass/variables';
+
+.footerBlock {
+  min-height: 25vh;
+  background-color: $bgSecondColor;
+
+  .footerContainer {
+    flex-direction: column;
+
+    .title {
+      background-color: honeydew;
+    }
+
+    .box {
+      border: 1px solid;
+      width: 250px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .icon {
+        background-color: #c0f6a3;
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .text {
+      background-color: honeydew;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+

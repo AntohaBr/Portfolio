@@ -1,15 +1,18 @@
-import React from 'react';
-import style from './Skill.module.css';
+import React from 'react'
+import s from './Skill.module.scss'
+import {SvgIconSkill} from '../../assets/svgIcon/SvgIconSkill'
 
 
-function Skill(props) {
+export const Skill = (props) => {
     return (
-        <div className={style.skill}>
-            <div className={style.icon}></div>
-            <h5 className={style.skillTitle}>{props.title}</h5>
-            <span>{props.description}</span>
+        <div className={s.skillBlock}>
+            <div className={s.skill}>
+                <SvgIconSkill/>
+                <div>
+                    <h5>{props.skill.title}</h5>
+                </div>
+            </div>
         </div>
-    );
+    )
 }
 
-export default Skill;

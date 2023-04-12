@@ -1,5 +1,5 @@
-import React from 'react';
-import style from './Job.module.scss';
+import React from 'react'
+import style from './Job.module.scss'
 
 
 function Job(props) {
