@@ -1,25 +1,63 @@
 @import '../common/styles/sass/variables';
 
 .mainBlock {
-    min-height: 100vh;
-    background-color: #202020;
+  min-height: 100vh;
+  background-color: $bgColor;
+
+  .photo {
+    width: 350px;
+    height: 490px;
+    background-size: cover;
+  }
+
+  .text {
+    width: 600px;
+
+    h1, h6 {
+      font-family: $titleFontFamily;
+      font-size: 70px;
+      line-height: 1em;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 0px;
+      color: $titleTextColor;
+    }
+
+    h6 {
+      display: inline-block;
+      font-weight: 700;
+      font-size: 17px;
+      letter-spacing: 2px;
+    }
+
+    .textAboutMe {
+      padding: 20px 0;
+      position: relative;
+
+      p {
+        font-family: $titleFontFamily;
+        color: $descriptionTextColor;
+        text-align: justify;
+        text-indent: 30px;
+        margin: 0px;
+        line-height: 1.5;
+      }
+    }
+
+    .btnDownloadCv {
+      border: 1px solid #ef0606;
+      position: relative;
+      width: 170px;
+      height: 70px;
+      //display: inline-block;
+      margin: 0 auto;
+      text-decoration: none;
+    }
+
+
+  }
 }
 
-.text {
-    width: 300px;
-    background-color: #bfffb6;
-    text-align: center;
-    /*    font-size: 70px;*/
-    /*    line-height: 1em;*/
-    /*    font-weight: 800;*/
-    /*    text-transform: uppercase;*/
-    /*    margin-bottom: 10px;*/
-    /*    color: #fff;*/
-    /*    text-shadow: 2px 2px #212228;*/
-}
 
-.photo {
-    width: 300px;
-    height: 400px;
-    background-color: #9df2ff;
-}
+
+
