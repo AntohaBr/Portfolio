@@ -3,24 +3,21 @@ import s from './Skills.module.scss'
 import styleContainer from '../common/styles/Container.module.css'
 import Title from '../common/components/title/Title'
 import {Skill} from './skill/Skill'
-import {reactIcon, javaScript, typeScript, redux, html, css, git, github, materialUI, responsiveDesign,
-    storyBook, unitTest} from '../assets'
-
 
 export const Skills = () => {
     const skills = [
-        {id: 1, style: reactIcon, title: 'React'},
-        {id: 2, style: redux, title: 'Redux'},
-        {id: 3, style: typeScript, title: 'TypeScript'},
-        {id: 4, style: javaScript, title: 'JavaScript'},
-        {id: 5, style: html, title: 'HTML5'},
-        {id: 6, style: css, title: 'CSS3'},
-        {id: 7, style: git, title: 'Git'},
-        {id: 8, style: github, title: 'GitHub'},
-        {id: 9, style: materialUI, title: 'Material UI'},
-        {id: 10, style: storyBook, title: 'StoryBook'},
-        {id: 11, style: unitTest, title: 'Unit testing'},
-        {id: 12, style: responsiveDesign, title: 'Responsive design'}
+        {id: 1, title: 'React'},
+        {id: 2, title: 'Redux'},
+        {id: 3, title: 'TypeScript'},
+        {id: 4, title: 'JavaScript'},
+        {id: 5, title: 'HTML5'},
+        {id: 6, title: 'CSS3'},
+        {id: 7, title: 'Git'},
+        {id: 8, title: 'GitHub'},
+        {id: 9, title: 'Material UI'},
+        {id: 10, title: 'StoryBook'},
+        {id: 11, title: 'Unit testing'},
+        {id: 12, title: 'Responsive design'},
     ]
 
     return (
