@@ -1,48 +1,48 @@
 @import '../../common/styles/sass/variables';
 
 .skillBlock {
+  border: 1px solid $descriptionTextColor;
   width: 250px;
+  height: 50px;
+  padding: 0px 10px 0px 10px;
+  margin: 45px 10px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 30px 20px 40px 20px;
+  background-color: $bgColor;
+  border-radius: 3px;
+  @media screen and (max-width: 1466px) {
+    width: 200px;
+  }
+  @media screen and (max-width: 1214px) {
+    width: 45%;
+    margin: 20px 10px;
+  }
+  @media screen and (max-width: 1053px) {
+    width: 235px;
+    margin: 5px auto;
+  }
 
-  .skill {
-    width: 150px;
-    height: 150px;
-    transition: ease all 0.7s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
+  span {
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+
+  .skillIcon {
+    //font-size: 1.5em;
+    //line-height: 30px;
+    width: 25px;
+    height: 25px;
     border: 1px solid $descriptionTextColor;
 
-    .icon {
-      width: 70px;
-      height: 70px;
-      border: 1px solid $descriptionTextColor;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      position: relative;
-      //margin-top: 10px;
-      path {
-        fill: #ef0606;
-      }
+    path {
+      fill: $titleTextColor;
     }
+  }
 
-    h5 {
-      font-family: $titleFontFamily;
-      color: $titleTextColor;
-      font-size: 14px;
-      border: 1px solid $descriptionTextColor;
-    }
+  .skillTitle {
+    font-family: $titleFontFamily;
+    color: $titleTextColor;
   }
 }
 

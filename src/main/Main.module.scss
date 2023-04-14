@@ -12,6 +12,7 @@
 
   .text {
     width: 600px;
+    border: 1px solid #06ef63;
 
     h1, h6 {
       font-family: $titleFontFamily;
@@ -33,6 +34,7 @@
     .textAboutMe {
       padding: 20px 0;
       position: relative;
+      z-index: 99;
 
       p {
         font-family: $titleFontFamily;
@@ -49,14 +51,28 @@
       position: relative;
       width: 170px;
       height: 70px;
-      //display: inline-block;
+      display: inline-block;
       margin: 0 auto;
       text-decoration: none;
     }
 
-
+    a {
+      text-align: center;
+      font-family: $titleFontFamily;
+      font-weight: 400;
+      color: $titleTextColor;
+      font-size: 16px;
+      line-height: 1.75em;
+      position: relative;
+      display: block;
+      z-index: 99;
+      top: 50%;
+      transform: translateY(-50%);
+      text-decoration: none;
+      }
+    }
   }
-}
+
 
 
 

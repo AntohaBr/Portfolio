@@ -2,12 +2,16 @@ import React from 'react'
 import s from './Main.module.scss'
 import styleContainer from './../common/styles/Container.module.css'
 import myPhoto from '../assets/image/myPhoto.jpg'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faArrowsDownToLine} from '@fortawesome/free-solid-svg-icons'
+// import {} from @fortawesome/'
 export const Main = () => {
     return (
         <div className={s.mainBlock}>
             <div className={styleContainer.container}>
                 <img className={s.photo} src={myPhoto} alt='my photo'></img>
+
+
 
                 <div className={s.text}>
                     <h1>
@@ -23,8 +27,9 @@ export const Main = () => {
                     </div>
                     <div>
                         <div className={s.btnDownloadCv}>
-                            <a href={''}>Download CV <i></i></a>
+                            <a href={''}>Download CV <FontAwesomeIcon icon={faArrowsDownToLine}/></a>
                         </div>
+                        {/*<FontAwesomeIcon icon={faArrowDownToBracket} />*/}
                     </div>
 
                 </div>
