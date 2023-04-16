@@ -1,10 +1,10 @@
 import React from 'react'
-import mainSvgIcon from '../assets/image/mainSvgIcon.svg'
+import svgIconSkill from '../../assets/image/svgIconSkill.svg'
 
 export const SvgIconSkills = (props) => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg'>
-            <use href={mainSvgIcon + '#' + props.id}/>
+            <use href={svgIconSkill + '#' + props.id}/>
         </svg>
     )
 }

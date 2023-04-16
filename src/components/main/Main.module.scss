@@ -3,16 +3,26 @@
 .mainBlock {
   min-height: 100vh;
   background-color: $bgColor;
+  @media screen and (max-width: 1193px) {
+    //min-height: 70vh;
+  }
 
   .photo {
     width: 350px;
     height: 490px;
     background-size: cover;
+    @media screen and (max-width: 1193px) {
+      width: 250px;
+      height: 390px;
+    }
   }
 
   .text {
     width: 600px;
     border: 1px solid #06ef63;
+    @media screen and (max-width: 1193px) {
+      width: 500px;
+    }
 
     h1, h6 {
       font-family: $titleFontFamily;
@@ -22,6 +32,9 @@
       text-transform: uppercase;
       margin-bottom: 0px;
       color: $titleTextColor;
+      @media screen and (max-width: 1193px) {
+        font-size: 50px;
+      }
     }
 
     h6 {
@@ -51,7 +64,6 @@
       position: relative;
       width: 170px;
       height: 70px;
-      display: inline-block;
       margin: 0 auto;
       text-decoration: none;
     }
@@ -69,9 +81,9 @@
       top: 50%;
       transform: translateY(-50%);
       text-decoration: none;
-      }
     }
   }
+}
 
 
 
