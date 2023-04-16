@@ -1,0 +1,7 @@
+export {Contact} from './contacts'
+export {Footer} from './footer'
+export {Header} from './header'
+export {Jobs} from './jobs'
+export {Main} from './main'
+export {Navbar} from './navbar'
+export {Skills} from './skills'
