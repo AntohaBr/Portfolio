@@ -3,9 +3,6 @@
 .mainBlock {
   min-height: 100vh;
   background-color: $bgColor;
-  @media screen and (max-width: 1193px) {
-    //min-height: 70vh;
-  }
 
   .photo {
     width: 350px;
@@ -15,13 +12,21 @@
       width: 250px;
       height: 390px;
     }
+    @media screen and (max-width: 890px) {
+      width: 250px;
+      height: 360px;
+    }
   }
 
   .text {
-    width: 600px;
-    border: 1px solid #06ef63;
+    max-width: 600px;
     @media screen and (max-width: 1193px) {
-      width: 500px;
+      width: 450px;
+      height: 390px;
+    }
+    @media screen and (max-width: 890px) {
+      width: 100%;
+      height: 100%;
     }
 
     h1, h6 {
@@ -35,6 +40,9 @@
       @media screen and (max-width: 1193px) {
         font-size: 50px;
       }
+      @media screen and (max-width: 444px) {
+        font-size: 42px;
+      }
     }
 
     h6 {
@@ -42,6 +50,12 @@
       font-weight: 700;
       font-size: 17px;
       letter-spacing: 2px;
+      @media screen and (max-width: 1193px) {
+        font-size: 11px;
+      }
+      @media screen and (max-width: 444px) {
+        font-size: 10px;
+      }
     }
 
     .textAboutMe {
@@ -56,14 +70,16 @@
         text-indent: 30px;
         margin: 0px;
         line-height: 1.5;
+        @media screen and (max-width: 444px) {
+          font-size: 14px;
+        }
       }
     }
 
     .btnDownloadCv {
-      border: 1px solid #ef0606;
       position: relative;
-      width: 170px;
-      height: 70px;
+      width: 120px;
+      height: 30px;
       margin: 0 auto;
       text-decoration: none;
     }
@@ -73,7 +89,7 @@
       font-family: $titleFontFamily;
       font-weight: 400;
       color: $titleTextColor;
-      font-size: 16px;
+      font-size: 15px;
       line-height: 1.75em;
       position: relative;
       display: block;
