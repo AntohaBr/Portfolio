@@ -5,7 +5,7 @@ import {Skill} from './skill/Skill'
 import {
     SvgIconCss, SvgIconGit, SvgIconGitHub, SvgIconHtml, SvgIconJavaScript, SvgIconMaterialUi, SvgIconReact,
     SvgIconRedux, SvgIconResponsiveDesign, SvgIconStoryBook, SvgIconTypeScript, SvgIconUnitTest
-} from 'common/svgIconSkills'
+} from 'common/svgIcon'
 import {Title} from 'common/title'
 
 export const Skills = () => {
