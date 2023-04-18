@@ -4,7 +4,7 @@ import styleContainer from '../../common/styles/Container.module.css'
 import socialImg from '../../assets/image/social_network_img.jpg'
 import todolistImg from '../../assets/image/todolost_img.jpg'
 import {Job} from './job/Job'
-import {Title} from 'common'
+import {Title} from 'common/title'
 
 export const Jobs = () => {
     const todolist = {
@@ -18,10 +18,11 @@ export const Jobs = () => {
     return (
         <div className={s.jobsBlock}>
             <div className={`${styleContainer.container} ${s.jobsContainer}`}>
-               <Title text={"Projects"}/>
+                <Title text={"Projects"}/>
                 <div className={s.jobs}>
-                    <Job style={todolist} title={'To Do List'} description={'Todolist to optimize working hours.'} />
-                    <Job style={socialNetwork} title={'Social network'} description={'Social network for meeting people and communicating with them.'}/>
+                    <Job style={todolist} title={'To Do List'} description={'Todolist to optimize working hours.'}/>
+                    <Job style={socialNetwork} title={'Social network'} description={'Social network for meeting ' +
+                        'people and communicating with them.'}/>
                 </div>
             </div>
         </div>
