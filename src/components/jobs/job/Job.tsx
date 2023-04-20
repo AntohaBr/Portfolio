@@ -15,7 +15,7 @@ export const Job: FC<JobPropsType> = ({style, title, description}) => {
             </div>
             <div className={s.jobInfo}>
                 <h3 className={s.jobTitle}>{title}</h3>
-                <span className={s.description}>{description}</span>
+                <div className={s.description}>{description}</div>
             </div>
         </div>
     )

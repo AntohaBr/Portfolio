@@ -45,7 +45,7 @@
 
   .jobInfo {
     padding: 25px 20px;
-
+    width: 100%;
     .jobTitle {
       @include text($titleFontFamily, 20px, 1.7em, 600,);
       margin-bottom: 20px;
@@ -54,6 +54,7 @@
     .description {
       @include text($titleFontFamily, 14px, 1.7em, 400);
       color: $descriptionTextColor;
+      text-align: justify;
     }
   }
 }
