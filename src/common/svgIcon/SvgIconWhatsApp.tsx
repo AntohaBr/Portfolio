@@ -2,9 +2,9 @@ import React from 'react'
 
 export const SvgIconWhatsApp = (props: any) => (
     <svg
-        fill="#000000"
-        width="800px"
-        height="800px"
+        fill="#fff"
+        width="45px"
+        height="45px"
         viewBox="0 0 16 16"
         xmlns="http://www.w3.org/2000/svg"
         {...props}

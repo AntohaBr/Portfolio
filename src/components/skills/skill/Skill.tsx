@@ -2,7 +2,7 @@ import React, {FC} from 'react'
 import s from './Skill.module.scss'
 
 type SkillsPropsType = {
-    icon: any,
+    icon: React.ReactNode,
     title: string
 }
 

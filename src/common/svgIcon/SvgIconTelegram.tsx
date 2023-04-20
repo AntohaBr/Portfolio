@@ -3,8 +3,8 @@ import React from 'react'
 export const SvgIconTelegram = (props: any) => (
     <svg
         fill="#fff"
-        width="30px"
-        height="300px"
+        width="45px"
+        height="45px"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
         {...props}

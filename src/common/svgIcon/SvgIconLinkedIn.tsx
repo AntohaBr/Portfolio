@@ -2,8 +2,8 @@ import React from 'react'
 
 export const SvgIconLinkedIn = (props: any) => (
     <svg
-        width={30}
-        height={30}
+        width={45}
+        height={45}
         viewBox="0 0 455 455"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

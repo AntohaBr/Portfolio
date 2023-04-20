@@ -8,28 +8,29 @@
     flex-direction: column;
 
     .title {
-      background-color: honeydew;
+      font-family: $titleFontFamily;
+      font-size: 23px;
+      line-height: 1.2em;
+      font-weight: 700;
+      color: $titleTextColor;
     }
 
     .box {
-      border: 1px solid;
-      width: 250px;
+      width: 300px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       flex-wrap: wrap;
-
-      .icon {
-        background-color: #c0f6a3;
-        width: 30px;
-        height: 30px;
+      @media screen and (max-width: 380px){
+        width: 240px;
       }
     }
 
     .text {
-      background-color: honeydew;
-      margin-top: 30px;
-      margin-bottom: 10px;
+      color: $descriptionTextColor;
+      font-family: $titleFontFamily;
+      margin-top: 25px;
+      margin-bottom: 15px;
     }
   }
 }
