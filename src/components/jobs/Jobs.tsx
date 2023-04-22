@@ -14,10 +14,27 @@ export const Jobs = () => {
     const cardTraining = {backgroundImage: `url(${Card_training})`}
 
     const jobs = [
-        {id: 1, style: cardTraining, title: 'Card training', description: `${baseStack} Formik, MUI`},
-        {id: 2, style: orderOfBusiness, title: 'Order Of business', description: `${baseStack} Formik, 
-        Storybook, Jest, MUI`},
-        {id: 3, style: publicNetwork, title: 'Public network', description: `${baseStack} React Hook Form, Jest`}
+        {
+            id: 1, style: cardTraining,
+            title: 'Card training',
+            description: `${baseStack} Formik, MUI`,
+            demo: '' ,
+            code: 'https://github.com/AntohaBr/Cards'
+        },
+        {
+            id: 2, style: orderOfBusiness,
+            title: 'Order Of business',
+            description: `${baseStack} Formik, Storybook, Jest, MUI`,
+            demo: 'https://antohabr.github.io/Todolist/',
+            code: 'https://github.com/AntohaBr/Todolist'
+        },
+        {
+            id: 3, style: publicNetwork,
+            title: 'Public network',
+            description: `${baseStack} React Hook Form, Jest`,
+            demo: '' ,
+            code: 'https://github.com/AntohaBr/Social-network'
+        }
     ]
 
     return (
@@ -27,6 +44,9 @@ export const Jobs = () => {
                 <div className={s.jobs}>
                     {jobs.map(job => (
                         <Job
+                            key={job.id}
+                            demo={job.demo}
+                            code={job.code}
                             style={job.style}
                             title={job.title}
                             description={job.description}/>
