@@ -11,16 +11,15 @@
     justify-content: flex-start;
 
     .jobs {
-      border: 1px solid;
-      min-width: 100%;
+      gap: 20px;
+      width: 100%;
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
       box-sizing: border-box;
-      margin-top: 50px;
       align-items: flex-start;
-      @media screen and (max-width: 628px) {
-        justify-content: center
+      @media screen and (max-width: 987px) {
+        justify-content: center;
       }
     }
   }
