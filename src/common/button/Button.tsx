@@ -5,6 +5,7 @@ type ButtonPropsType = {
     buttonTitle: string
     code?: string
     demo?: string
+    type?: string
 }
 
 export const Button: FC<ButtonPropsType> = ({buttonTitle, code, demo}) => {

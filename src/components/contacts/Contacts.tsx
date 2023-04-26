@@ -2,6 +2,7 @@ import React from 'react'
 import s from './Contacts.module.css'
 import styleContainer from '../../common/styles/Container.module.css'
 import {Title} from 'common/title'
+import sb from '../../common/button/Button.module.scss'
 
 export const Contact = () => {
     return (
@@ -27,7 +28,7 @@ export const Contact = () => {
                             </div>
                         </div>
                     </div>
-                    <button type={'submit'} className={s.button}>Send Message</button>
+                    <button type={'submit'} className={`${sb.button} ${s.buttonContact}`}>Send Message</button>
                 </form>
             </div>
         </div>
