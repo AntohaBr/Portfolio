@@ -1,0 +1,17 @@
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
+
+a {
+  @include text($titleFontFamily, 18px, 1.2em, 500);
+  color: $titleTextColor;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+    color: $descriptionTextColor;
+  }
+}
+
+.active {
+  color: $descriptionTextColor;
+}

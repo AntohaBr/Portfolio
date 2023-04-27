@@ -13,7 +13,7 @@ export const Footer = () => {
     ]
 
     return (
-        <div className={s.footerBlock}>
+        <div className={s.footerBlock} id={'contacts'}>
             <div className={`${styleContainer.container} ${s.footerContainer}`}>
                 <h3 className={s.title}>Anton Brel</h3>
                 <div className={s.box}>

@@ -1,25 +1,24 @@
 import {Link} from 'react-scroll'
 import {FC} from 'react'
+import s from './UniversalLink.module.scss'
 
 type ScrollItemPropsType = {
     path: string,
-    onClick?: () => void
     title: string
-    offset: number
+    onClickHandle?: () => void
 }
 
-export const UniversalLink: FC<ScrollItemPropsType> =
-    ({path, onClick, title, offset}) => {
+export const UniversalLink: FC<ScrollItemPropsType> = ({path, onClickHandle, title}) => {
 
         return (
             <Link
-                activeClass='active'
+                activeClass={s.active}
                 to={path}
                 spy={true}
                 smooth={true}
                 duration={500}
-                offset={offset}
-                // onClick={onClick}
+                offset={-50}
+                onClick={onClickHandle}
             >
                 {title}
             </Link>
