@@ -6,7 +6,7 @@ import sb from '../../common/button/Button.module.scss'
 
 export const Contact = () => {
     return (
-        <div className={s.contactsBlock}>
+        <div className={s.contactsBlock} id={'contacts'}>
             <div className={`${styleContainer.container} ${s.contactsContainer}`}>
                 <Title text={'Contact'}/>
                 <form className={s.contact}>

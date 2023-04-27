@@ -1,25 +1,27 @@
-import {Link} from 'react-router-dom'
+import {Link} from 'react-scroll'
 import {FC} from 'react'
 
 type ScrollItemPropsType = {
     path: string,
-    onClick: () => void
+    onClick?: () => void
     title: string
+    offset: number
 }
 
-export const ScrollItem: FC<ScrollItemPropsType> = ({path, onClick, title}) => {
-    return (
-        <div>{title}</div>
-        // <Link
-        //     // activeClass={''}
-        //     to={path}
-        //     spy={true}
-        //     smooth={true}
-        //     offset={-50}
-        //     duration={500}
-        //     onClick={onClick}
-        // >
-        //     {title}
-        // </Link>
-    )
-}
+export const UniversalLink: FC<ScrollItemPropsType> =
+    ({path, onClick, title, offset}) => {
+
+        return (
+            <Link
+                activeClass='active'
+                to={path}
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={offset}
+                // onClick={onClick}
+            >
+                {title}
+            </Link>
+        )
+    }

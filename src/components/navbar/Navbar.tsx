@@ -1,11 +1,11 @@
 import React from 'react'
 import s from './Navbar.module.scss'
-import {Menu} from 'components/navbar/menu/Menu'
+import {BurgerNavbar} from 'components/navbar/menu/BurgerNavbar'
 
 export const Navbar = () => {
     return (
         <div className={s.nav}>
-            <Menu/>
+            <BurgerNavbar/>
         </div>
     )
 }

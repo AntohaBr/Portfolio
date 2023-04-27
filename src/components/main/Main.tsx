@@ -4,11 +4,11 @@ import styleContainer from '../../common/styles/Container.module.css'
 import MyPhoto from '../../assets/image/MyPhoto.jpg'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faArrowsDownToLine} from '@fortawesome/free-solid-svg-icons'
-// import Anton_Brel from 'assets/image/Anton_Brel.pdf'
+import Anton_Brel from 'assets/image/Anton_Brel.pdf'
 
 export const Main = () => {
     return (
-        <div className={s.mainBlock}>
+        <div className={s.mainBlock} id={'main'}>
             <div className={styleContainer.container}>
                 <img className={s.photo} src={MyPhoto} alt='my photo'></img>
                 <div className={s.text}>
@@ -25,7 +25,7 @@ export const Main = () => {
                     </div>
                     <div>
                         <div className={s.btnDownloadCv}>
-                            <a href={'Anton_Brel'} download='CV_Anton_Brel.pdf' >Download CV
+                            <a href={Anton_Brel} download='CV_Anton_Brel.pdf' >Download CV
                                 <FontAwesomeIcon icon={faArrowsDownToLine}/></a>
                         </div>
                     </div>
