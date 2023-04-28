@@ -1,6 +1,5 @@
 import React from 'react'
 import s from './Jobs.module.scss'
-import styleContainer from '../../common/styles/Container.module.css'
 import Public_network from '../../assets/image/Public_network.jpg'
 import Card_training from '../../assets/image/Card_training.jpg'
 import Order_of_Business from '../../assets/image/Order_of_Business.jpg'
@@ -19,7 +18,7 @@ export const Jobs = () => {
             style: cardTraining,
             title: 'Card training',
             description: `${baseStack} Formik, MUI`,
-            demo: '' ,
+            demo: 'https://antohabr.github.io/Cards/#/login',
             code: 'https://github.com/AntohaBr/Cards'
         },
         {
@@ -35,14 +34,14 @@ export const Jobs = () => {
             style: publicNetwork,
             title: 'Public network',
             description: `${baseStack} React Hook Form, Jest`,
-            demo: '' ,
+            demo: 'https://antohabr.github.io/Social-network/',
             code: 'https://github.com/AntohaBr/Social-network'
         }
     ]
 
     return (
         <div className={s.jobsBlock} id={'projects'}>
-            <div className={`${styleContainer.container} ${s.jobsContainer}`}>
+            <div className={s.container}>
                 <Title text={"Projects"}/>
                 <div className={s.jobs}>
                     {jobs.map(job => (

@@ -1,6 +1,5 @@
 import React from 'react'
 import s from './Main.module.scss'
-import styleContainer from '../../common/styles/Container.module.css'
 import MyPhoto from '../../assets/image/MyPhoto.jpg'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faArrowsDownToLine} from '@fortawesome/free-solid-svg-icons'
@@ -9,7 +8,7 @@ import {faArrowsDownToLine} from '@fortawesome/free-solid-svg-icons'
 export const Main = () => {
     return (
         <div className={s.mainBlock} id={'main'}>
-            <div className={styleContainer.container}>
+            <div className={s.container}>
                 <img className={s.photo} src={MyPhoto} alt='my photo'></img>
                 <div className={s.text}>
                     <h1>

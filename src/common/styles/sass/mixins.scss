@@ -15,3 +15,16 @@
   align-items: $alignItems;
   flex-wrap: $wrap;
 }
+
+@mixin container() {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+//@include container();
+//@include flex(row, center, center, nowrap);

@@ -1,25 +1,24 @@
 @import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
 
 .jobsBlock {
-  min-height: 100vh;
-  background-color: $bgColor;
-  padding: 50px 0;
+  min-height: 80vh;
+  background-color: $bgSecondColor;
+  padding: 100px 0;
 
-  .jobsContainer {
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+  .container {
+    border: 1px solid #1030ff;
+    @include container();
+    @include flex(column, flex-start, center, nowrap);
 
     .jobs {
+      border: 1px solid #ff1058;
       gap: 20px;
       width: 100%;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      @include flex(row, space-between, flex-start, wrap);
       box-sizing: border-box;
-      align-items: flex-start;
       @media screen and (max-width: 987px) {
-        justify-content: center;
+        @include flex(row, center, flex-start, wrap);
       }
     }
   }

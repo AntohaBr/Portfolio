@@ -1,0 +1,35 @@
+@import '../../../common/styles/sass/variables';
+@import '../../../common/styles/sass/mixins';
+
+.burgerNavbar {
+ // border: 1px solid #105cff;
+ //background-color: chartreuse;
+
+  //width: 100%;
+  //height: 100%;
+
+  .iconFaBars {
+    @include size(20px, 20px);
+  }
+
+  .BurgerNavbarItems {
+    //border: 1px solid #ff102c;
+    @include flex(column, space-around, center, nowrap);
+
+    height: 0;
+    padding: 20px;
+    background-color: #252527;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    //transform: translate(0, -150px);
+    //transition: 0.7s;
+
+  }
+
+  //@media screen and (min-width: 444px) {
+  //  display: none;
+  //}
+}
+

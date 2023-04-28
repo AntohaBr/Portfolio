@@ -1,6 +1,5 @@
 import React from 'react'
 import s from './Skills.module.scss'
-import styleContainer from '../../common/styles/Container.module.css'
 import {Skill} from './skill/Skill'
 import {
     SvgIconCss, SvgIconGit, SvgIconGitHub, SvgIconHtml, SvgIconJavaScript, SvgIconMaterialUi, SvgIconReact,
@@ -26,7 +25,7 @@ export const Skills = () => {
 
     return (
         <div className={s.skillsBlock} id={'skills'}>
-            <div className={`${styleContainer.container} ${s.skillsContainer}`}>
+            <div className={s.container}>
                 <Title text={'Skills'}/>
                 <div className={s.skills}>
                     {skills.map(skill => (

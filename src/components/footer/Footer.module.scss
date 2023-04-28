@@ -1,27 +1,23 @@
 @import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
 
 .footerBlock {
-  min-height: 25vh;
+  min-height: 20vh;
   background-color: $bgSecondColor;
 
-  .footerContainer {
-    flex-direction: column;
+  .container {
+    @include container();
+    @include flex(column, center, center, nowrap);
 
     .title {
-      font-family: $titleFontFamily;
-      font-size: 23px;
-      line-height: 1.2em;
-      font-weight: 700;
+      @include text($titleFontFamily, 23px, 1.2em, 700);
       color: $titleTextColor;
     }
 
     .box {
       width: 300px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      @media screen and (max-width: 380px){
+      @include flex(row, space-between, center, wrap);
+      @media screen and (max-width: 380px) {
         width: 240px;
       }
     }

@@ -1,7 +1,6 @@
 import React from 'react'
 import s from './Navbar.module.scss'
-import {UniversalLink} from '../../../common/universalLink/UniversalLink'
-
+import {UniversalLink} from 'common/universalLink/UniversalLink'
 
 export const Navbar = () => {
     return (

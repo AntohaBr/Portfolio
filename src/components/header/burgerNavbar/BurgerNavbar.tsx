@@ -1,37 +1,44 @@
 import React, {useState} from 'react'
 import {FaBars} from 'react-icons/fa'
 import {AiOutlineHome, AiOutlinePicture, AiOutlineMail, AiOutlineSetting} from 'react-icons/ai'
-import {UniversalLink} from 'common'
+import {UniversalLink} from 'common/universalLink/UniversalLink'
+import s from './BurgerNavbar.module.scss'
 
 export const BurgerNavbar = () => {
-    const [menuIsOpen, setMenuIsOpen] = useState(true)
+    const [menuIsOpen, setMenuIsOpen] = useState(false)
 
-    const onToggle = () => {
+    const openMenu = () => {
         setMenuIsOpen(!menuIsOpen)
     }
 
+    const closeMenu = () => {
+        setMenuIsOpen(false)
+    }
+
     return (
-        <div>
-            <button onClick={onToggle}  type='button' id="burgerButton" ><FaBars/></button>
+        <div className={s.burgerNavbar}>
+            <button onClick={openMenu} type='button' id="burgerButton"><FaBars className={s.iconFaBars}/></button>
             {!menuIsOpen &&
-                <div>
+                <div className={s.BurgerNavbarItems}>
                     <UniversalLink
                         path='main'
                         title={'Main'}
+                        onClick={closeMenu}
                     />
                     <UniversalLink
                         path='skills'
                         title={'Skills'}
-
+                        onClick={closeMenu}
                     />
                     <UniversalLink
                         path='projects'
                         title={'Projects'}
-
+                        onClick={closeMenu}
                     />
                     <UniversalLink
                         path='contacts'
                         title={'Contacts'}
+                        onClick={closeMenu}
                     />
                 </div>
             }

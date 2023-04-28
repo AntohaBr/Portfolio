@@ -2,33 +2,25 @@
 @import '../../../common/styles/sass/mixins';
 
 .wrapper {
-  width: 400px;
-  height: 500px;
+  @include size(400px, 500px);
+
   @media screen and (max-width: 1549px) {
-    width: 300px;
-    height: 400px;
+    @include size(300px, 400px);
   }
   @media screen and (max-width: 1174px) {
-    width: 250px;
-    height: 350px;
+    @include size(250px, 350px);
   }
   @media screen and (max-width: 987px) {
-    width: 550px;
-    height: 400px;
+    @include size(550px, 400px);
   }
   @media screen and (max-width: 395px) {
-    width: 500px;
-    height: 350px;
+    @include size(500px, 350px);
   }
-
 
   .job {
     height: 500px;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex(column, center, center, nowrap);
     gap: 10px;
     padding: 20px;
     box-sizing: border-box;
@@ -47,8 +39,7 @@
     }
 
     .picture {
-      height: 100%;
-      width: 100%;
+      @include size(100%, 100%);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -69,9 +60,7 @@
       }
 
       .button {
-        width: 120px;
-        height: 30px;
-        background: #105cff;
+        @include size(120px, 30px);
         border: 0;
         font-size: larger;
         position: relative;

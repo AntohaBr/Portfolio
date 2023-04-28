@@ -1,6 +1,5 @@
 import React from 'react'
 import s from './Footer.module.scss'
-import styleContainer from '../../common/styles/Container.module.css'
 import {SvgIconLinkedIn, SvgIconPhone, SvgIconTelegram, SvgIconWhatsApp} from 'common/svgIcon'
 import {FooterIcon} from './footerIcon/FooterIcon'
 
@@ -14,7 +13,7 @@ export const Footer = () => {
 
     return (
         <div className={s.footerBlock} id={'contacts'}>
-            <div className={`${styleContainer.container} ${s.footerContainer}`}>
+            <div className={s.container}>
                 <h3 className={s.title}>Anton Brel</h3>
                 <div className={s.box}>
                     {
