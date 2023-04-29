@@ -17,11 +17,11 @@ export const Job: FC<JobPropsType> = ({style, title, description, code, demo}) =
                 <div className={s.picture} style={style}>
                     <Button
                         buttonTitle={'Demo'}
-                        demo={demo}
+                        // demo={demo}
                     />
                     <Button
                         buttonTitle={'Code'}
-                        code={code}
+                        // code={code}
                     />
                 </div>
                 <div className={s.jobInfo}>

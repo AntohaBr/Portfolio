@@ -47,8 +47,8 @@ export const Jobs = () => {
                     {jobs.map(job => (
                         <Job
                             key={job.id}
-                            demo={job.demo}
-                            code={job.code}
+                            // demo={job.demo}
+                            // code={job.code}
                             style={job.style}
                             title={job.title}
                             description={job.description}/>

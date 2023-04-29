@@ -1,72 +1,47 @@
 @import '../../common/styles/sass/variables';
 @import '../../common/styles/sass/mixins';
 
-a {
-  @include text($titleFontFamily, 16px, 1.7em, 600);
+.button {
+  @include text($titleFontFamily, 14px, 1.2em, 500);
+  text-transform: uppercase;
   text-decoration: none;
-  @media screen and (max-width: 1549px) {
-    @include text($titleFontFamily, 15px, 1.4em, 600);
-  }
-  @media screen and (max-width: 1174px) {
-    @include text($titleFontFamily, 13px, 1em, 600);
-  }
-  @media screen and (max-width: 987px) {
-    @include text($titleFontFamily, 16px, 1.7em, 600);
-  }
-  @media screen and (max-width: 517px) {
-    @include text($titleFontFamily, 15px, 1.4em, 600);
-  }
-  @media screen and (max-width: 436px) {
-    @include text($titleFontFamily, 13px, 1em, 600);
-  }
+  cursor: pointer;
+  letter-spacing: 1px;
+  padding: 7px 20px;
+  background: transparent;
+  color: $titleTextColor;
+  max-width: 170px;
+  margin: 15px auto;
+  z-index: 22;
+  text-align: center;
+  border-radius: 2px;
+  width: 100%;
+  border: none;
+  position: relative;
 
-  .button {
-    max-width: 100px;
-    max-height: 30px;
-    background: $bgSecondColor;
-    border: 2px solid #000000;
-    cursor: pointer;
-    margin: 20px;
-    font-weight: 400;
-    border-radius: 30px;
-    padding: 8px 20px;
-    text-align: center;
-    font-size: larger;
-    position: relative;
-    z-index: 1;
-    @media screen and (max-width: 1549px) {
-      @include size(60px, 20px);
-      margin: 10px;
-    }
-    @media screen and (max-width: 1174px) {
-      @include size(40px, 15px);
-      margin: 5px;
-    }
-    @media screen and (max-width: 987px) {
-      @include size(100px, 30px);
-      margin: 20px;
-    }
-    @media screen and (max-width: 517px) {
-      @include size(80px, 25px);
-      margin: 15px;
-    }
-    @media screen and (max-width: 436px) {
-      @include size(40px, 15px);
-      margin: 5px;
-    }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 10px;
+    width: 50%;
+    background: $descriptionTextColor;
+    z-index: -1;
+    margin: 0 auto;
 
     &:hover {
-      transition: 0.5s;
-      scale: 1.1;
-    }
+      color: $titleTextColor;
 
-    :active {
-      position: relative;
-      top: 2px;
-      left: 0;
+      &::after {
+        height: 100%;
+        width: 100%;
+      }
     }
   }
 }
+
 
 
 
