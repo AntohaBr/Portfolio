@@ -3,7 +3,7 @@
 
 .job {
   @include flex(column, flex-start, center, wrap);
-  background-color: #333;
+  background-color: $backgroundComponentsColor;
   border-radius: 1px;
   padding: 20px;
 

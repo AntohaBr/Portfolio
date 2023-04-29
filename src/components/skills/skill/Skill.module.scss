@@ -7,7 +7,7 @@
   padding: 0px 10px 0px 10px;
   margin: 45px 10px;
   @include flex(row, space-between, center, nowrap);
-  background-color: $bgSecondColor;
+  background-color: $backgroundComponentsColor;
   border-radius: 3px;
   @media screen and (max-width: 1466px) {
     width: 200px;
