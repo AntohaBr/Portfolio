@@ -1,5 +1,5 @@
-@import '../../common/styles/sass/variables.scss';
-@import '../../common/styles/sass/mixins';
+@import '../../common/styles/variables';
+@import '../../common/styles/mixins';
 
 .contactsBlock {
   background-color: $bgColor;
@@ -33,6 +33,7 @@
         outline: none;
         color: $titleTextColor;
         margin-bottom: 1.2rem;
+        border-radius: 2px;
       }
 
       .input {

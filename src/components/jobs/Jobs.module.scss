@@ -1,8 +1,7 @@
-@import '../../common/styles/sass/variables';
-@import '../../common/styles/sass/mixins';
+@import '../../common/styles/variables';
+@import '../../common/styles/mixins';
 
 .jobsBlock {
-  min-height: 80vh;
   background-color: $bgSecondColor;
   padding: 100px 0;
 
@@ -12,13 +11,16 @@
     @include flex(column, flex-start, center, nowrap);
 
     .jobs {
-      border: 1px solid #ff1058;
+      display: grid;
       gap: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(400px, auto));
       width: 100%;
-      @include flex(row, space-between, flex-start, wrap);
-      box-sizing: border-box;
-      @media screen and (max-width: 987px) {
-        @include flex(row, center, flex-start, wrap);
+      margin-top: 30px;
+      @media screen and (max-width: 500px) {
+        grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+      }
+      @media screen and (max-width: 378px) {
+        grid-template-columns: repeat(auto-fill, minmax(250px, auto));
       }
     }
   }

@@ -1,7 +1,7 @@
 import React from 'react'
 import s from 'components/contacts/Contacts.module.scss'
 import {Title} from 'common/title'
-import sb from '../../common/button/Button.module.scss'
+import {Button} from 'common/button'
 
 export const Contact = () => {
     return (
@@ -18,7 +18,7 @@ export const Contact = () => {
                     <div className={s.inputItem}>
                         <textarea className={s.textarea} placeholder={'Your message'}></textarea>
                     </div>
-                    <button type={'submit'} className={`${sb.button} ${s.buttonContact}`}>Send Message</button>
+                    <Button type='submit' buttonTitle={'Send Message'}/>
                 </form>
             </div>
         </div>

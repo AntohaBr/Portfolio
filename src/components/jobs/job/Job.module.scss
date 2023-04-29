@@ -1,96 +1,49 @@
-@import '../../../common/styles/sass/variables';
-@import '../../../common/styles/sass/mixins';
+@import '../../../common/styles/variables';
+@import '../../../common/styles/mixins';
 
-.wrapper {
-  @include size(400px, 500px);
+.job {
+  @include flex(column, flex-start, center, wrap);
+  background-color: #333;
+  border-radius: 1px;
+  padding: 20px;
 
-  @media screen and (max-width: 1549px) {
-    @include size(300px, 400px);
-  }
-  @media screen and (max-width: 1174px) {
-    @include size(250px, 350px);
-  }
-  @media screen and (max-width: 987px) {
-    @include size(550px, 400px);
-  }
-  @media screen and (max-width: 395px) {
-    @include size(500px, 350px);
-  }
-
-  .job {
-    height: 500px;
+  .picture {
+    @include flex(column, center, center, wrap);
+    min-height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     position: relative;
-    @include flex(column, center, center, nowrap);
-    gap: 10px;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #333;
-    @media screen and (max-width: 1549px) {
-      height: 400px;
-    }
-    @media screen and (max-width: 1174px) {
-      height: 350px;
-    }
-    @media screen and (max-width: 987px) {
-      height: 400px;
-    }
-    @media screen and (max-width: 395px) {
-      height: 350px;
-    }
 
-    .picture {
-      @include size(100%, 100%);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      background-color: $bgSecondColor;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.3;
+    }
+  }
 
-      &::before {
-        position: absolute;
-        content: '';
-        background-color: $bgSecondColor;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        opacity: 0.4;
-      }
+  .jobInfo {
+    width: 100%;
 
-      .button {
-        @include size(120px, 30px);
-        border: 0;
-        font-size: larger;
-        position: relative;
-        z-index: 1;
-      }
+    .jobTitle {
+      text-align: center;
+      @include text($titleFontFamily, 20px, 1.7em, 600,);
     }
 
-    .jobInfo {
-      width: 100%;
-
-      .jobTitle {
-        text-align: center;
-        @include text($titleFontFamily, 20px, 1.7em, 600,);
-        @media screen and (max-width: 395px) {
-          @include text($titleFontFamily, 15px, 1.1em, 600,);
-        }
-      }
-
-      .description {
-        @include text($titleFontFamily, 14px, 1.7em, 400);
-        color: $descriptionTextColor;
-        text-align: justify;
-        @media screen and (max-width: 395px) {
-          font-size: 12px;
-          line-height: 1.3em
-        }
-      }
+    .description {
+      @include text($titleFontFamily, 14px, 1.7em, 400);
+      color: $descriptionTextColor;
+      text-align: justify;
     }
   }
 }
+
 
 
 
