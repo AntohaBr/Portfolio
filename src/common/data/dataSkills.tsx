@@ -5,7 +5,7 @@ import {
     SvgIconHtml,
     SvgIconJavaScript, SvgIconMaterialUi,
     SvgIconReact,
-    SvgIconRedux, SvgIconResponsiveDesign, SvgIconSass, SvgIconStoryBook,
+    SvgIconRedux, SvgIconResponsiveDesign, SvgIconRestApi, SvgIconSass, SvgIconStoryBook,
     SvgIconTypeScript, SvgIconUnitTest
 } from 'common/svgIcon'
 
@@ -17,7 +17,7 @@ export const dataSkills = [
     {id: 5, icon: <SvgIconHtml/>, title: 'HTML5'},
     {id: 6, icon: <SvgIconCss/>, title: 'CSS3'},
     {id: 7, icon: <SvgIconSass/>, title: 'SASS'},
-    {id: 8, icon: '<SvgIconCss/>', title: 'Rest API'},
+    {id: 8, icon: <SvgIconRestApi/>, title: 'Rest API'},
     {id: 9, icon: <SvgIconAxios/>, title: 'Axios'},
     {id: 10, icon: <SvgIconGit/>, title: 'Git'},
     {id: 11, icon: <SvgIconGitHub/>, title: 'GitHub'},
