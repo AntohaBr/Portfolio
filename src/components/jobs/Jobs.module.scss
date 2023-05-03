@@ -2,11 +2,10 @@
 @import '../../common/styles/mixins';
 
 .jobsBlock {
-  background-color: $bgSecondColor;
-  padding: 100px 0;
+  @include block(100px 0, $bgSecondColor);
+  @include flex(row, center, center, nowrap);
 
   .container {
-    border: 1px solid #1030ff;
     @include container();
     @include flex(column, flex-start, center, nowrap);
 
@@ -15,7 +14,7 @@
       gap: 20px;
       grid-template-columns: repeat(auto-fill, minmax(400px, auto));
       width: 100%;
-      margin-top: 30px;
+      margin: 10px 0 22px 0;
       @media screen and (max-width: 500px) {
         grid-template-columns: repeat(auto-fill, minmax(300px, auto));
       }

@@ -2,20 +2,22 @@
 @import '../../common/styles/mixins';
 
 .footerBlock {
-  min-height: 20vh;
-  background-color: $bgSecondColor;
+  @include block(15px 0, $bgSecondColor);
+  @include flex(row, space-between, center, nowrap);
 
   .container {
     @include container();
-    @include flex(column, center, center, nowrap);
+    @include flex(column, space-between, center, nowrap);
 
     .title {
       @include text($titleFontFamily, 23px, 1.2em, 700);
       color: $titleTextColor;
+      margin: 0;
     }
 
     .box {
       width: 300px;
+      margin-top: 25px;
       @include flex(row, space-between, center, wrap);
       @media screen and (max-width: 380px) {
         width: 240px;
@@ -26,7 +28,6 @@
       color: $descriptionTextColor;
       font-family: $titleFontFamily;
       margin-top: 25px;
-      margin-bottom: 15px;
     }
   }
 }

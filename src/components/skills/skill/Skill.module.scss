@@ -4,21 +4,13 @@
 .skillBlock {
   border: 1px solid $descriptionTextColor;
   @include size(250px, 50px);
-  padding: 0px 10px 0px 10px;
-  margin: 45px 10px;
+  padding: 0 10px;
   @include flex(row, space-between, center, nowrap);
+  align-content: space-between;
   background-color: $backgroundComponentsColor;
   border-radius: 3px;
-  @media screen and (max-width: 1466px) {
-    width: 200px;
-  }
-  @media screen and (max-width: 1214px) {
-    width: 45%;
-    margin: 20px 10px;
-  }
-  @media screen and (max-width: 1053px) {
-    width: 235px;
-    margin: 5px auto;
+  @media screen and (max-width: 1122px) {
+    width: 220px;
   }
 
   span {

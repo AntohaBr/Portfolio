@@ -2,22 +2,24 @@
 @import '../../common/styles/mixins';
 
 .skillsBlock {
-  min-height: 60vh;
-  background-color: $bgColor;
-  padding: 90px 0;
+  @include block(100px 0, $bgColor);
+  @include flex(row, center, center, nowrap);
 
   .container {
-    border: 1px solid #1030ff;
     @include container();
     @include flex(column, flex-start, center, nowrap);
 
     .skills {
-      border: 1px solid;
       min-width: 100%;
       @include flex(row, space-between, center, wrap);
       box-sizing: border-box;
-      @media screen and (max-width: 940px) {
-        justify-content: center
+      margin: 10px 0 22px 0;
+      gap: 40px;
+      @media screen and (max-width: 1007px) {
+        justify-content: center;
+      }
+      @media screen and (max-width: 654px) {
+        gap: 10px;
       }
     }
   }

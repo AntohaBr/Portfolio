@@ -1,8 +1,7 @@
 import React from 'react'
 import s from './Main.module.scss'
 import MyPhoto from '../../assets/image/MyPhoto.jpg'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faArrowsDownToLine} from '@fortawesome/free-solid-svg-icons'
+import {SvgIconDownload} from 'common/svgIcon'
 // import Anton_Brel from 'assets/image/Anton_Brel.pdf'
 
 export const Main = () => {
@@ -25,10 +24,9 @@ export const Main = () => {
                     <div>
                         <div className={s.btnDownloadCv}>
                             <a href={'Anton_Brel'} download='CV_Anton_Brel.pdf' >Download CV
-                                <FontAwesomeIcon icon={faArrowsDownToLine}/></a>
+                                <SvgIconDownload/></a>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>

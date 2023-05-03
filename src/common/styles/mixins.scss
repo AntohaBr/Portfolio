@@ -16,7 +16,13 @@
   flex-wrap: $wrap;
 }
 
+@mixin block($padding, $background-color) {
+  padding: $padding;
+  background-color: $background-color;
+}
+
 @mixin container() {
+  //min-height: 100%;
   width: 80%;
   margin: 0 auto;
 }

@@ -2,20 +2,18 @@
 @import '../../common/styles/mixins';
 
 .contactsBlock {
-  background-color: $bgColor;
-  min-height: 65vh;
-  display: flex;
-  align-items: center;
+  @include block(100px 0, $bgColor);
+  @include flex(row, center, center, nowrap);
 
   .container {
     @include container();
-    @include flex(column, flex-start, center, nowrap);
-    border: 1px solid #1030ff;
+    @include flex(column, center, center, nowrap);
   }
 
   .form {
-    @include flex(column, flex-start, stretch, nowrap);
+    @include flex(column, center, stretch, nowrap);
     width: 540px;
+    margin: 10px 0 22px 0;
     @media screen and (max-width: 680px) {
       width: 100%;
     }

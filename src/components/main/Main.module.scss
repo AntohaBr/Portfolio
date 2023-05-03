@@ -2,8 +2,8 @@
 @import '../../common/styles/mixins';
 
 .mainBlock {
-  min-height: 100vh;
-  background-color: $bgSecondColor;
+  @include block(100px 0, $bgSecondColor);
+  @include flex(row, center, center, nowrap);
 
   .container {
     @include container();
@@ -22,6 +22,7 @@
 
     .text {
       max-width: 600px;
+      margin-left: 50px;
       @media screen and (max-width: 1193px) {
         @include size(450px, 390px);
       }
@@ -77,23 +78,16 @@
       }
 
       .btnDownloadCv {
-        position: relative;
-        @include size(120px, 30px);
+        @include size(150px, 30px);
         margin: 0 auto;
       }
 
       a {
         text-align: center;
         font-family: $titleFontFamily;
-        font-weight: 400;
+        font-weight: 500;
         color: $titleTextColor;
-        font-size: 15px;
-        line-height: 1.75em;
-        position: relative;
-        display: block;
-        z-index: 99;
-        top: 50%;
-        transform: translateY(-50%);
+        font-size: 18px;
         text-decoration: none;
       }
     }
