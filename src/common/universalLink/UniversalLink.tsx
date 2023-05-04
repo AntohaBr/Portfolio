@@ -5,10 +5,9 @@ import s from './UniversalLink.module.scss'
 type ScrollItemPropsType = {
     path: string,
     title: string
-    onClick?: () => void
 }
 
-export const UniversalLink: FC<ScrollItemPropsType> = ({path, onClick, title}) => {
+export const UniversalLink: FC<ScrollItemPropsType> = ({path, title}) => {
 
         return (
             <Link
@@ -18,7 +17,6 @@ export const UniversalLink: FC<ScrollItemPropsType> = ({path, onClick, title}) =
                 smooth={true}
                 duration={500}
                 offset={-50}
-                onClick={onClick}
             >
                 {title}
             </Link>

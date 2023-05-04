@@ -8,26 +8,38 @@
   .container {
     @include container();
     @include flex(row, center, center, nowrap);
+    @media screen and (max-width: 1021px) {
+      @include flex(column, center, center, wrap);
+    }
 
     .photo {
       @include size(350px, 490px);
       background-size: cover;
-      @media screen and (max-width: 1193px) {
-        @include size(250px, 390px);
+      @media screen and (max-width: 1354px) {
+        @include size(290px, 410px);
       }
-      @media screen and (max-width: 890px) {
-        @include size(250px, 360px);
+      @media screen and (max-width: 1148px) {
+        @include size(300px, 435px);
+      }
+      @media screen and (max-width: 632px) {
+        @include size(250px, 350px);
       }
     }
 
     .text {
-      max-width: 600px;
+      width: 40%;
       margin-left: 50px;
-      @media screen and (max-width: 1193px) {
-        @include size(450px, 390px);
+      @media screen and (max-width: 1354px) {
+        min-height: 390px;
       }
-      @media screen and (max-width: 890px) {
-        @include size(100%, 100%);
+      @media screen and (max-width: 1021px) {
+        margin: 50px auto 0 auto;
+        width: 70%;
+
+      }
+      @media screen and (max-width: 632px) {
+        width: 100%;
+        min-height: 100%;
       }
 
       h1, h6 {
@@ -36,12 +48,12 @@
         line-height: 1em;
         font-weight: 800;
         text-transform: uppercase;
-        margin-bottom: 0px;
+        margin-bottom: 0;
         color: $titleTextColor;
-        @media screen and (max-width: 1193px) {
+        @media screen and (max-width: 1354px) {
           font-size: 50px;
         }
-        @media screen and (max-width: 444px) {
+        @media screen and (max-width: 632px) {
           font-size: 42px;
         }
       }
@@ -51,27 +63,25 @@
         font-weight: 700;
         font-size: 17px;
         letter-spacing: 2px;
-        @media screen and (max-width: 1193px) {
+        @media screen and (max-width: 1354px) {
           font-size: 11px;
         }
-        @media screen and (max-width: 444px) {
+        @media screen and (max-width: 632px) {
           font-size: 10px;
         }
       }
 
       .textAboutMe {
         padding: 20px 0;
-        position: relative;
-        z-index: 99;
 
         p {
           font-family: $titleFontFamily;
           color: $descriptionTextColor;
           text-align: justify;
           text-indent: 30px;
-          margin: 0px;
+          margin: 0;
           line-height: 1.5;
-          @media screen and (max-width: 444px) {
+          @media screen and (max-width: 632px) {
             font-size: 14px;
           }
         }
@@ -80,15 +90,14 @@
       .btnDownloadCv {
         @include size(150px, 30px);
         margin: 0 auto;
-      }
-
-      a {
-        text-align: center;
-        font-family: $titleFontFamily;
-        font-weight: 500;
-        color: $titleTextColor;
-        font-size: 18px;
-        text-decoration: none;
+        a {
+          text-align: center;
+          font-family: $titleFontFamily;
+          font-weight: 500;
+          color: $titleTextColor;
+          font-size: 18px;
+          text-decoration: none;
+        }
       }
     }
   }
