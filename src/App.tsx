@@ -1,5 +1,5 @@
 import React from 'react'
-import './App.css'
+import 'App.scss'
 import {Jobs, Footer, Contact, Skills, Main, Header} from 'components'
 
 export const App = () => {

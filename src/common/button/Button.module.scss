@@ -14,8 +14,6 @@
   margin: 40px auto 0;
   z-index: 22;
   text-align: center;
-  border-radius: 2px;
-  width: 100%;
   border: none;
   position: relative;
 
@@ -29,17 +27,20 @@
     background: $descriptionTextColor;
     z-index: -1;
     margin: 0 auto;
+  }
 
-    &:hover {
-      color: $titleTextColor;
+  &:hover {
+    color: $titleTextColor;
 
-      &::after {
-        height: 100%;
-        width: 100%;
-      }
+    &::after {
+      height: 100%;
+      width: 100%;
+      border-radius: 2px;
+      transition: all 0.3s ease-in-out 0s;
     }
   }
 }
+
 
 
 

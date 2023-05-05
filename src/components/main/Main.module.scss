@@ -3,7 +3,19 @@
 
 .mainBlock {
   @include block(100px 0, $bgSecondColor);
+  min-height: 100vh;
   @include flex(row, center, center, nowrap);
+
+  .particles {
+    //border: 5px solid #ef0202;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    //margin-top: 100px;
+    opacity: 0.3;
+  }
 
   .container {
     @include container();
@@ -13,7 +25,9 @@
     }
 
     .photo {
+      position: relative;
       @include size(350px, 490px);
+      //z-index: 1;
       background-size: cover;
       @media screen and (max-width: 1354px) {
         @include size(290px, 410px);
@@ -29,6 +43,8 @@
     .text {
       width: 40%;
       margin-left: 50px;
+      position: relative;
+      z-index: 0;
       @media screen and (max-width: 1354px) {
         min-height: 390px;
       }
@@ -90,6 +106,7 @@
       .btnDownloadCv {
         @include size(150px, 30px);
         margin: 0 auto;
+
         a {
           text-align: center;
           font-family: $titleFontFamily;

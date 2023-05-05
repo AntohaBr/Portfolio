@@ -2,11 +2,61 @@ import React from 'react'
 import s from './Main.module.scss'
 import MyPhoto from '../../assets/image/MyPhoto.jpg'
 import {SvgIconDownload} from 'common/svgIcon'
+import Particles from "react-tsparticles";
+import {loadFull} from "tsparticles";
+import type {Engine} from "tsparticles-engine";
 // import Anton_Brel from 'assets/image/Anton_Brel.pdf'
 
+const particlesOptions = {
+    particles: {
+        color: {
+            value: 'blue',
+        },
+        links: {
+            color: '#4e93e6',
+            distance: 200,
+            enable: true,
+            opacity: 0.5,
+            width: 1,
+        },
+        collisions: {
+            enable: true,
+        },
+        move: {
+            enable: true,
+            random: false,
+            speed: 2,
+            straight: false,
+        },
+        number: {
+            density: {
+                enable: true,
+                value_area: 1000,
+            },
+            value: 150,
+        },
+        opacity: {
+            value: 0.7,
+        },
+        shape: {
+            type: 'circle',
+        },
+    },
+    fullScreen: {
+        enable: false
+    }
+}
+
 export const Main = () => {
+
+    const particlesInit = (engine: Engine): any => {
+        loadFull(engine);
+    };
+
     return (
         <div className={s.mainBlock} id={'main'}>
+            <Particles className={s.particles} init={particlesInit} options={particlesOptions} />
+            {/*<Particles className={s.particles} init={particlesInit} options={particlesOptions} />*/}
             <div className={s.container}>
                 <img className={s.photo} src={MyPhoto} alt='my photo'></img>
                 <div className={s.text}>
