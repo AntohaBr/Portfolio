@@ -1,9 +1,11 @@
 .icon {
   width: 45px;
   height: 45px;
+  transition: all ease-in-out 150ms;
 
   &:hover {
-    cursor: pointer;
-    opacity: .5;
+    opacity: .8;
+    margin-top: -10px;
+    transform: translate(0, -8);
   }
 }
