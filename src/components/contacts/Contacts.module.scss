@@ -2,7 +2,7 @@
 @import '../../common/styles/mixins';
 
 .contactsBlock {
-  @include block(100px 0, $bgColor);
+  padding: 100px 0;
   @include flex(row, center, center, nowrap);
 
   .container {

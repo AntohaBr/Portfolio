@@ -9,25 +9,23 @@ export const Jobs = () => {
 
     return (
         <div className={s.jobsBlock} id={'projects'}>
-            <Fade delay={150}>
-                <div className={s.container}>
-                    <Fade top delay={700}>
-                        <Title text={"Projects"}/>
-                    </Fade>
-                    <div className={s.jobs}>
-                        {dataJobs.map(job => (
-                            <Job
-                                key={job.id}
-                                demo={job.demo}
-                                code={job.code}
-                                backgroundImage={job.backgroundImage}
-                                title={job.title}
-                                description={job.description}/>
-                        ))
-                        }
-                    </div>
+            <div className={s.container}>
+                <Fade top delay={300}>
+                    <Title text={"Projects"}/>
+                </Fade>
+                <div className={s.jobs}>
+                    {dataJobs.map(job => (
+                        <Job
+                            key={job.id}
+                            demo={job.demo}
+                            code={job.code}
+                            backgroundImage={job.backgroundImage}
+                            title={job.title}
+                            description={job.description}/>
+                    ))
+                    }
                 </div>
-            </Fade>
+            </div>
         </div>
     )
 }

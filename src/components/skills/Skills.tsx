@@ -9,23 +9,21 @@ export const Skills = () => {
 
     return (
         <div className={s.skillsBlock} id={'skills'}>
-            <Fade delay={150}>
-                <div className={s.container}>
-                    <Fade top delay={700}>
-                        <Title text={'Skills'}/>
-                    </Fade>
-                    <div className={s.skills}>
-                        {dataSkills.map(skill => (
-                            <Skill
-                                key={skill.id}
-                                icon={skill.icon}
-                                title={skill.title}
-                            />
-                        ))
-                        }
-                    </div>
+            <div className={s.container}>
+                <Fade top delay={300}>
+                    <Title text={'Skills'}/>
+                </Fade>
+                <div className={s.skills}>
+                    {dataSkills.map(skill => (
+                        <Skill
+                            key={skill.id}
+                            icon={skill.icon}
+                            title={skill.title}
+                        />
+                    ))
+                    }
                 </div>
-            </Fade>
+            </div>
         </div>
     )
 }

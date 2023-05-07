@@ -2,7 +2,7 @@
 @import '../../common/styles/mixins';
 
 .mainBlock {
-  @include block(100px 0, $bgSecondColor);
+  padding: 100px 0;
   min-height: 100vh;
   @include flex(row, center, center, nowrap);
 
@@ -90,7 +90,7 @@
       .textAboutMe {
         padding: 20px 0;
 
-        p {
+        span {
           font-family: $titleFontFamily;
           color: $descriptionTextColor;
           text-align: justify;
@@ -118,6 +118,7 @@
       }
     }
   }
+
 }
 
 

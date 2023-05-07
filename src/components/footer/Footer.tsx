@@ -10,7 +10,9 @@ export const Footer = () => {
         <div className={s.footerBlock} id={'contacts'}>
             <Fade delay={150}>
                 <div className={s.container}>
-                    <h3 className={s.title}>Anton Brel</h3>
+                    <Fade top delay={300}>
+                        <h3 className={s.title}>Anton Brel</h3>
+                    </Fade>
                     <div className={s.box}>
                         {
                             dataContacts.map(footerIcon => (

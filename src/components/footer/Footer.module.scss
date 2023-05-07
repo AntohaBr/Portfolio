@@ -2,7 +2,7 @@
 @import '../../common/styles/mixins';
 
 .footerBlock {
-  @include block(15px 0, $bgSecondColor);
+  padding: 15px 0;
   @include flex(row, space-between, center, nowrap);
 
   .container {

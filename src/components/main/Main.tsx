@@ -2,10 +2,10 @@ import React from 'react'
 import s from './Main.module.scss'
 import MyPhoto from '../../assets/image/MyPhoto.jpg'
 import {SvgIconDownload} from 'common/svgIcon'
-import Particles from "react-tsparticles";
-import {loadFull} from "tsparticles";
-import type {Engine} from "tsparticles-engine";
-
+import Particles from 'react-tsparticles'
+import {loadFull} from 'tsparticles'
+import type {Engine} from 'tsparticles-engine'
+import ReactTypingEffect from 'react-typing-effect'
 // import Anton_Brel from 'assets/image/Anton_Brel.pdf'
 
 const particlesOptions = {
@@ -52,6 +52,11 @@ export const Fade = require('react-reveal/Fade')
 
 export const Main = () => {
 
+    const textAboutMe = 'Hi, I’m Anton Brel and I am web & app developer.I am goal-oriented person with a great motivation to ' +
+        'achieve high results and become a highly qualified specialist. In am a responsible and communicative person ' +
+        'with a positive attitude to the world. Together we can make the world a better place by creating exciting ' +
+        'and useful products.'
+
     const particlesInit = (engine: Engine): any => {
         loadFull(engine)
     }
@@ -72,12 +77,8 @@ export const Main = () => {
                         </Fade>
                         <Fade bottom>
                             <div className={s.textAboutMe}>
-                                <p>Hi, I’m Anton Brel and I am web & app developer. I am goal-oriented person with a
-                                    great
-                                    motivation to achieve high results and become a highly qualified specialist. In am a
-                                    responsible and communicative person with a positive attitude to the world.</p>
-                                <p>Together we can make the world a better place by creating exciting and useful
-                                    products.</p>
+                                <ReactTypingEffect text={textAboutMe} speed={80} typingDelay={1700}
+                                                   eraseDelay={400000}/>
                             </div>
                             <div className={s.btnDownloadCv}>
                                 <a href={'Anton_Brel'} download='CV_Anton_Brel.pdf'>Download CV

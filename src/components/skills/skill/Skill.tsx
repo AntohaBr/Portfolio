@@ -1,21 +1,22 @@
 import React, {FC} from 'react'
 import s from './Skill.module.scss'
-import {Fade} from 'components/main/Main'
 
 type SkillsPropsType = {
     icon: React.ReactNode,
     title: string
 }
 
+export const Zoom = require('react-reveal/Zoom')
+
 export const Skill: FC<SkillsPropsType> = ({icon, title}) => {
     return (
         <>
-            <div className={s.skillBlock}>
-                <Fade>
+            <Zoom>
+                <div className={s.skillBlock}>
                     <span className={s.skillIcon}>{icon}</span>
                     <span className={s.skillTitle}>{title}</span>
-                </Fade>
-            </div>
+                </div>
+            </Zoom>
         </>
     )
 }

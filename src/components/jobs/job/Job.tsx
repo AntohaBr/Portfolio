@@ -1,7 +1,7 @@
 import React, {FC} from 'react'
 import s from './Job.module.scss'
 import sb from '../../../common/button/Button.module.scss'
-import {Fade} from 'components/main/Main'
+import {Zoom} from 'components/skills/skill/Skill'
 
 type JobPropsType = {
     backgroundImage: string
@@ -11,11 +11,14 @@ type JobPropsType = {
     demo?: string
 }
 
-export const Job: FC<JobPropsType> = ({backgroundImage, title, description, code,
-                                          demo}) => {
+export const Job: FC<JobPropsType> = ({
+                                          backgroundImage, title, description, code,
+                                          demo
+                                      }) => {
     return (
-        <div className={s.job}>
-            <Fade>
+        <Zoom>
+            <div className={s.job}>
+
                 <div className={s.picture} style={{backgroundImage}}>
                     <a href={demo} className={sb.button} target={'_blank'} rel='noopener noreferrer'>View demo</a>
                     <a href={code} className={sb.button} target={'_blank'} rel='noopener noreferrer'>View code</a>
@@ -24,8 +27,7 @@ export const Job: FC<JobPropsType> = ({backgroundImage, title, description, code
                     <h3 className={s.jobTitle}>{title}</h3>
                     <span className={s.description}>{description}</span>
                 </div>
-            </Fade>
-
-        </div>
+            </div>
+        </Zoom>
     )
 }

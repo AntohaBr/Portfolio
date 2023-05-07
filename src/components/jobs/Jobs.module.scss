@@ -2,7 +2,7 @@
 @import '../../common/styles/mixins';
 
 .jobsBlock {
-  @include block(100px 0, $bgSecondColor);
+  padding: 100px 0;
   @include flex(row, center, center, nowrap);
 
   .container {

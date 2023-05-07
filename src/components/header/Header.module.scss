@@ -1,9 +1,10 @@
 @import '../../common/styles/variables';
-@import "../../common/styles/mixins";
+@import '../../common/styles/mixins';
 
 .header {
   box-shadow: 0 0 13px 1px $titleTextColor;
   position: sticky;
+  z-index: 2;
   top: 0;
   background-color: $bgColor;
   @include flex(row, flex-end, center, nowrap);
