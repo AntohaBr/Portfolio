@@ -1,6 +1,6 @@
-import Card_training from "assets/image/Card_training.jpg";
-import Order_of_Business from "assets/image/Order_of_Business.jpg";
-import Public_network from "assets/image/Public_network.jpg";
+import Card_training from 'assets/image/Card_training.jpg'
+import Order_of_Business from 'assets/image/Order_of_Business.jpg'
+import Public_network from 'assets/image/Public_network.jpg'
 
 const baseStack = 'Stack: React, Redux, Typescript, Javascript, Redux-Thunk, React-Router-dom, Axios, Rest API,'
 
