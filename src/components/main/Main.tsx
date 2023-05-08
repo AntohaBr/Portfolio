@@ -6,7 +6,7 @@ import Particles from 'react-tsparticles'
 import {loadFull} from 'tsparticles'
 import type {Engine} from 'tsparticles-engine'
 import ReactTypingEffect from 'react-typing-effect'
-// import Anton_Brel from 'assets/image/Anton_Brel.pdf'
+import Anton_Brel from 'assets/image/Anton_Brel.pdf'
 
 const particlesOptions = {
     particles: {
@@ -63,16 +63,15 @@ export const Main = () => {
 
     return (
         <div className={s.mainBlock} id={'main'}>
-            <Particles className={s.particles} init={particlesInit} options={particlesOptions}/>
+            {/*<Particles className={s.particles} init={particlesInit} options={particlesOptions}/>*/}
             <Fade delay={150}>
                 <div className={s.container}>
-                    <img className={s.photo} src={MyPhoto} alt='my photo'></img>
+                    <div className={s.transformBanner}>
+                        <img className={s.img} src={MyPhoto} alt='my photo'/>
+                    </div>
                     <div className={s.text}>
                         <Fade left>
-                            <h1>
-                                <div>ANTON</div>
-                                <div>BREL</div>
-                            </h1>
+                            <h1>ANTON BREL</h1>
                             <h6>Front-end Developer</h6>
                         </Fade>
                         <Fade bottom>
@@ -81,7 +80,7 @@ export const Main = () => {
                                                    eraseDelay={400000}/>
                             </div>
                             <div className={s.btnDownloadCv}>
-                                <a href={'Anton_Brel'} download='CV_Anton_Brel.pdf'>Download CV
+                                <a href={Anton_Brel} download='CV_Anton_Brel.pdf'>Download CV
                                     <SvgIconDownload/></a>
                             </div>
                         </Fade>

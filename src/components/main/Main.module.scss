@@ -7,44 +7,81 @@
   @include flex(row, center, center, nowrap);
 
   .particles {
-    //border: 5px solid #ef0202;
+    //min-height: 100vh;
+    //width: 10%;
+    //  height: 100vh;
+    //objectFit:cover;
+    opacity: 0.3;
+
+
+    border: 5px solid #ef0202;
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    //margin-top: 100px;
-    opacity: 0.3;
+    margin-top: 150px;
+    //opacity: 0.3;
   }
 
   .container {
+    border: 5px solid #ef0202;
     @include container();
-    @include flex(row, center, center, nowrap);
+    @include flex(row,center, center, nowrap);
     @media screen and (max-width: 1021px) {
       @include flex(column, center, center, wrap);
     }
 
-    .photo {
+    .transformBanner {
       position: relative;
-      @include size(350px, 490px);
-      //z-index: 1;
-      background-size: cover;
-      @media screen and (max-width: 1354px) {
-        @include size(290px, 410px);
-      }
-      @media screen and (max-width: 1148px) {
-        @include size(300px, 435px);
-      }
-      @media screen and (max-width: 632px) {
-        @include size(250px, 350px);
+
+      .img {
+        @include size(562px, 562px);
+        animation: border-transform 10s linear infinite alternate;
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        transition: all 1s ease-in-out;
+        @keyframes border-transform {
+          0%, 100% {
+            border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+          }
+          14% {
+            border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+          }
+          28% {
+            border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+          }
+          42% {
+            border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+          }
+          56% {
+            border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+          }
+          70% {
+            border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+          }
+          84% {
+            border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+          }
+        }
+
+        @media screen and (max-width: 1354px) {
+          @include size(290px, 410px);
+        }
+        @media screen and (max-width: 1148px) {
+          @include size(300px, 435px);
+        }
+        @media screen and (max-width: 632px) {
+          @include size(250px, 350px);
+        }
       }
     }
 
     .text {
-      width: 40%;
-      margin-left: 50px;
       position: relative;
-      z-index: 0;
+      z-index: 3;
+      height: auto;
+      right: 6%;
+      width: 45%;
       @media screen and (max-width: 1354px) {
         min-height: 390px;
       }
@@ -66,6 +103,7 @@
         text-transform: uppercase;
         margin-bottom: 0;
         color: $titleTextColor;
+        text-shadow: 2px 2px #212228;
         @media screen and (max-width: 1354px) {
           font-size: 50px;
         }
@@ -89,6 +127,7 @@
 
       .textAboutMe {
         padding: 20px 0;
+        margin-left: 90px;
 
         span {
           font-family: $titleFontFamily;

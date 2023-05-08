@@ -2,6 +2,7 @@
 @import '../../common/styles/mixins';
 
 .jobsBlock {
+  min-height: 100vh;
   padding: 100px 0;
   @include flex(row, center, center, nowrap);
 

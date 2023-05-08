@@ -24,8 +24,8 @@
 
       .input,
       .textarea {
-        background: $bgSecondColor;
-        border: 1px solid #4a4a4a;
+        background: $bgColor;
+        border: 1px solid $descriptionTextColor;
         box-sizing: border-box;
         @include text(inherit, 15px, 1.5, 400);
         outline: none;
@@ -34,14 +34,14 @@
         border-radius: 2px;
 
         &:focus {
-          border: 1px solid $bgSecondColor;
+          border: 1px solid #4a4a4a;
           transition: all 0.4s ease-in-out 0s;
         }
 
         &:-webkit-autofill {
-          border: 1px solid #4a4a4a;
-          -webkit-text-fill-color: #495057;
-          -webkit-box-shadow: 0 0 0 1000px $bgSecondColor inset;
+          border: 1px solid $descriptionTextColor;
+          -webkit-text-fill-color: $titleTextColor;
+          -webkit-box-shadow: 0 0 0 1000px $bgColor inset;
           transition: background-color 5000s ease-in-out 0s;
         }
       }
