@@ -1,6 +1,6 @@
 import React from 'react'
 import s from './Main.module.scss'
-import MyPhoto from '../../assets/image/MyPhoto.jpg'
+import MyPhoto from '../../assets/image/My_photo.jpg'
 import {SvgIconDownload} from 'common/svgIcon'
 import Particles from 'react-tsparticles'
 import {loadFull} from 'tsparticles'
@@ -14,10 +14,10 @@ const particlesOptions = {
             value: 'blue',
         },
         links: {
-            color: '#4e93e6',
-            distance: 200,
+            color: '#f2f2f1',
+            distance: 100,
             enable: true,
-            opacity: 0.5,
+            opacity: 0.2,
             width: 1,
         },
         collisions: {
@@ -26,7 +26,7 @@ const particlesOptions = {
         move: {
             enable: true,
             random: false,
-            speed: 2,
+            speed: 0.5,
             straight: false,
         },
         number: {
@@ -37,7 +37,7 @@ const particlesOptions = {
             value: 150,
         },
         opacity: {
-            value: 0.7,
+            value: 0.1,
         },
         shape: {
             type: 'circle',
@@ -63,7 +63,7 @@ export const Main = () => {
 
     return (
         <div className={s.mainBlock} id={'main'}>
-            {/*<Particles className={s.particles} init={particlesInit} options={particlesOptions}/>*/}
+            <Particles className={s.particles} init={particlesInit} options={particlesOptions}/>
             <Fade delay={150}>
                 <div className={s.container}>
                     <div className={s.transformBanner}>

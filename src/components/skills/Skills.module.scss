@@ -2,8 +2,7 @@
 @import '../../common/styles/mixins';
 
 .skillsBlock {
-  min-height: 100vh;
-  padding: 100px 0;
+  min-height: calc(100vh - 50px);
   @include flex(row, center, center, nowrap);
 
   .container {
@@ -15,7 +14,8 @@
       @include flex(row, space-between, center, wrap);
       box-sizing: border-box;
       margin: 10px 0 22px 0;
-      gap: 40px;
+
+      gap: 100px 40px;
       @media screen and (max-width: 1007px) {
         justify-content: center;
       }

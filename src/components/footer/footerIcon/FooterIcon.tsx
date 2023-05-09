@@ -1,6 +1,6 @@
 import React, {FC} from 'react'
 import s from './FooterIcon.module.scss'
-import {Fade} from "components/main/Main";
+import {Fade} from 'components/main/Main'
 
 type FooterIconPropsType = {
     icon: React.ReactNode,

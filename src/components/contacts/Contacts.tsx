@@ -3,7 +3,7 @@ import s from 'components/contacts/Contacts.module.scss'
 import {Title} from 'common/title'
 import {Button} from 'common/button'
 import {Fade} from 'components/main/Main'
-import {Zoom} from "components/skills/skill/Skill";
+import {Zoom} from 'components/skills/skill/Skill'
 
 export const Contact = () => {
     return (
