@@ -7,31 +7,41 @@
   border-radius: 1px;
   padding: 20px;
 
-
   .picture {
-    @include flex(column, center, center, wrap);
-    min-height: 300px;
     width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    @media screen and (max-width: 1549px) {
-      min-height: 200px;
-    }
-    @media screen and (max-width: 500px) {
-      min-height: 200px;
+    min-height: 300px;
+    //border: 1px solid #e11111;
+    overflow: hidden;
+
+    .img {
+      min-height: 300px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      transition: all 0.2s linear;
+      @media screen and (max-width: 1549px) {
+        min-height: 200px;
+      }
+      @media screen and (max-width: 500px) {
+        min-height: 200px;
+      }
+
+      &:hover {
+        transform: scale(1.3);
+      }
     }
 
-    &::before {
-      position: absolute;
-      content: '';
-      background-color: $bgSecondColor;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      opacity: 0.3;
+    .buttonsBlock {
+      @include flex(row, center, center, wrap);
+      height: 100%;
+      //border: 1px solid #24ff02;
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+      background-color: rgba(0, 0, 0, 0.2);
+
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 
@@ -49,4 +59,5 @@
       text-align: justify;
     }
   }
+
 }

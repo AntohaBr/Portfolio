@@ -2,14 +2,12 @@
 
 .App {
   > div {
-    //&:nth-child(n) {
-    //  //background-color: $bgColor;
-    //  background-color: #212228;
-    //}
+    &:nth-child(n) {
+      background-color: $bgColor;
+    }
 
-    &:nth-child(n), &:nth-child(2n) {
-      //background-color: $bgSecondColor;
-      background-color: #18191d;
+    &:nth-child(2n) {
+      background-color: $bgSecondColor;
     }
   }
 }
