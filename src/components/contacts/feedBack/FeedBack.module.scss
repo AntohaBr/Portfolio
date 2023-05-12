@@ -1,0 +1,28 @@
+@import 'src/Common/Styles/mixins';
+@import 'src/Common/Styles/mixins';
+
+.successMessage, .errorMessage {
+  border: 1px solid;
+  margin: 20px 0px;
+  padding: 5px 5px 5px 50px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  border-radius: 2px;
+}
+
+.successMessage {
+  color: #4F8A10;
+  background-color: #DFF2BF;
+  background-image: url('../../../assets/image/Success.png');
+}
+
+.errorMessage {
+  color: #D8000C;
+  background-color: #FFBABA;
+  background-image: url('../../../assets/image/Error.png');
+}
+
+
+
+
+

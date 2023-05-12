@@ -1,5 +1,5 @@
-@import '../../../common/styles/variables';
-@import '../../../common/styles/mixins';
+@import 'src/common/styles/variables';
+@import 'src/common/styles/mixins';
 
 .job {
   @include flex(column, flex-start, center, wrap);
@@ -8,10 +8,14 @@
   padding: 20px;
 
   .picture {
+    position: relative;
     width: 100%;
     min-height: 300px;
-    //border: 1px solid #e11111;
     overflow: hidden;
+
+    &:hover .img {
+      transform: scale(1.3);
+    }
 
     .img {
       min-height: 300px;
@@ -25,19 +29,17 @@
       @media screen and (max-width: 500px) {
         min-height: 200px;
       }
-
-      &:hover {
-        transform: scale(1.3);
-      }
     }
 
     .buttonsBlock {
+      position: absolute;
+      width: 100%;
+      top: 0;
       @include flex(row, center, center, wrap);
       height: 100%;
-      //border: 1px solid #24ff02;
       opacity: 0;
-      transition: all 0.4s ease-in-out;
-      background-color: rgba(0, 0, 0, 0.2);
+      transition: all 0.4s ease-in-out 0.1s;
+      background-color: rgba(0, 0, 0, 0.5);
 
       &:hover {
         opacity: 1;

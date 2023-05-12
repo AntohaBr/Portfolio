@@ -1,11 +1,12 @@
-@import '../../common/styles/variables';
-@import '../../common/styles/mixins';
+@import 'src/common/styles/variables';
+@import 'src/common/styles/mixins';
 
 .contactsBlock {
   padding: 117px 0;
   @include flex(row, center, center, nowrap);
 
   .container {
+    position: relative;
     @include container();
     @include flex(column, center, center, nowrap);
   }
@@ -21,6 +22,7 @@
     .inputItem {
       display: flex;
       flex-direction: column;
+      margin-bottom: 1.2rem;
 
       .input,
       .textarea {
@@ -30,7 +32,6 @@
         @include text(inherit, 15px, 1.5, 400);
         outline: none;
         color: $titleTextColor;
-        margin-bottom: 1.2rem;
         border-radius: 2px;
 
         &:focus {
@@ -48,13 +49,47 @@
 
       .input {
         height: calc(1.5rem + .75rem + 2px);
-        padding: .4rem 15px;
+        padding: .4rem 14px;
       }
 
       .textarea {
         min-height: 160px;
         padding: 15px;
         resize: none;
+      }
+
+      .error {
+        padding: 4px 0 0 15px;
+        @include text(inherit, 15px, 1, .00);
+        color: #ff0229;
+      }
+    }
+  }
+
+  .spinner {
+    @include text(inherit, 15px, 1, 400);
+    color: $titleTextColor;
+
+    &:after {
+      content: '';
+      width: 5em;
+      height: 5em;
+      position: absolute;
+      top: 320px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      border-top: 0.5rem solid $descriptionTextColor;
+      border-right: 0.25rem solid transparent;
+      border-left: 0.5rem solid $descriptionTextColor;
+      border-radius: 50%;
+      animation: spin 1.5s infinite linear;
+    }
+
+    @keyframes spin {
+      100% {
+        transform: rotate(360deg);
       }
     }
   }

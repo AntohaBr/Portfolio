@@ -20,7 +20,7 @@ export const Job: FC<JobPropsType> = ({
             <div className={s.job}>
 
                 <div className={s.picture}>
-                    {/*<div className={s.img} style={{backgroundImage}}/>*/}
+                    <div className={s.img} style={{backgroundImage}}/>
                     <div className={s.buttonsBlock}>
                         <a href={demo} className={sb.button} target={'_blank'} rel='noopener noreferrer'>View demo</a>
                         <a href={code} className={sb.button} target={'_blank'} rel='noopener noreferrer'>View code</a>
