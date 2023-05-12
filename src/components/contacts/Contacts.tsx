@@ -101,7 +101,7 @@ export const Contact = () => {
                                 <span
                                     className={s.error}>{formik.touched.message && formik.errors.message}</span>
                             </div>
-                            {loading
+                            {!loading
                                 ? <Button type='submit' buttonTitle='Send Message'/>
                                 : <div className={s.spinner}/>
                             }
