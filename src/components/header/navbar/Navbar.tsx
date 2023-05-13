@@ -7,19 +7,23 @@ export const Navbar = () => {
         <div className={s.nav}>
             <UniversalLink
                 path='main'
-                title={'Main'}
+                title='Main'
+                offset={-50}
             />
             <UniversalLink
                 path='skills'
-                title={'Skills'}
+                title='Skills'
+                offset={-90}
             />
             <UniversalLink
                 path='projects'
-                title={'Projects'}
+                title='Projects'
+                offset={-80}
             />
             <UniversalLink
                 path='contacts'
-                title={'Contacts'}
+                title='Contacts'
+                offset={1}
             />
         </div>
     )

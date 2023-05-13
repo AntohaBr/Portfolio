@@ -3,7 +3,7 @@ import s from './FooterIcon.module.scss'
 import {Fade} from 'components/main/Main'
 
 type FooterIconPropsType = {
-    icon: React.ReactNode,
+    icon: React.ReactNode
     description: string
 }
 

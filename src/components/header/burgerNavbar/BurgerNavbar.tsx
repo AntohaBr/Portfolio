@@ -5,9 +5,16 @@ import s from './BurgerNavbar.module.scss'
 
 export const BurgerNavbar = () => {
     const [menuIsOpen, setMenuIsOpen] = useState(false)
+    const [menuClose, setMenuClose] = useState(true)
 
     const openMenu = () => {
         setMenuIsOpen(!menuIsOpen)
+        setMenuClose (!menuClose)
+    }
+
+    const closeMenu = () => {
+        setMenuIsOpen(false)
+        setMenuClose(true)
     }
 
     return (
@@ -15,19 +22,27 @@ export const BurgerNavbar = () => {
             <div className={menuIsOpen ? `${s.burgerNavItems} ${s.show}` : s.burgerNavItems}>
                 <UniversalLink
                     path='main'
-                    title={'Main'}
+                    title='Main'
+                    onClick={closeMenu}
+                    offset={-70}
                 />
                 <UniversalLink
                     path='skills'
-                    title={'Skills'}
+                    title='Skills'
+                    onClick={closeMenu}
+                    offset={-50}
                 />
                 <UniversalLink
                     path='projects'
-                    title={'Projects'}
+                    title='Projects'
+                    onClick={closeMenu}
+                    offset={-50}
                 />
                 <UniversalLink
                     path='contacts'
-                    title={'Contacts'}
+                    title='Contacts'
+                    onClick={closeMenu}
+                    offset={-15}
                 />
             </div>
             <FaBars className={s.burgerBtn} onClick={openMenu}/>

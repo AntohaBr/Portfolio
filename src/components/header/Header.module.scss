@@ -3,11 +3,15 @@
 
 .header {
   box-shadow: 0 0 13px 1px $titleTextColor;
-  position: sticky;
+  position: fixed;
   z-index: 2;
-  top: 0;
-  background-color: $bgColor;
+  left: 0;
+  right: 0;
   @include flex(row, flex-end, center, nowrap);
   height: 80px;
   padding: 0 30px;
+
+  @media screen and (max-width: 444px) {
+    height: 40px;
+  }
 }

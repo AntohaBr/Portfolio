@@ -6,11 +6,12 @@ import {Fade} from 'components/main/Main'
 import {Zoom} from 'components/skills/skill/Skill'
 import {useFormik} from 'formik'
 import axios from 'axios'
-import {FeedBack} from 'components/contacts/feedBack/FeedBack'
+import {FeedBack} from 'components/contacts/feedBack'
+
 
 type FormType = {
-    name?: string;
-    email?: string;
+    name?: string
+    email?: string
     message?: string
 }
 
@@ -62,10 +63,10 @@ export const Contact = () => {
     })
 
     return (
-        <div className={s.contactsBlock} id={'contacts'}>
+        <div className={s.contactsBlock} id='contacts'>
             <div className={s.container}>
                 <Fade top delay={300}>
-                    <Title text={'Contact'}/>
+                    <Title text='Contact'/>
                 </Fade>
                 <Zoom>
                     {messageSent
@@ -106,7 +107,7 @@ export const Contact = () => {
                                 : <div className={s.spinner}/>
                             }
                             <>
-                                {error && <FeedBack error={error}/>}
+                                {!loading && error && <FeedBack error={error}/>}
                             </>
                         </form>
                     }

@@ -1,13 +1,24 @@
 @import 'src/common/styles/variables';
+@import 'src/common/styles/mixins';
 
 .icon {
-  width: 45px;
-  height: 45px;
+  @include size(45px, 45px);
   transition: all ease-in-out 150ms;
 
   &:hover {
     opacity: .8;
     margin-top: -10px;
     transform: translate(0, -8);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .icon {
+    @include size(30px, 30px);
+
+    svg {
+      width: 30px;
+      height: 30px;
+    }
   }
 }

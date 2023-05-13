@@ -2,7 +2,8 @@
 @import 'src/common/styles/mixins';
 
 .mainBlock {
-  min-height: calc(100vh - 50px);
+  padding: 80px 0;
+  min-height: 100vh;
   @include flex(row, center, center, nowrap);
 
   .particles {
@@ -17,6 +18,7 @@
   .container {
     @include container();
     @include flex(row, center, center, nowrap);
+
     @media screen and (max-width: 1021px) {
       @include flex(column, center, center, wrap);
     }
@@ -56,9 +58,11 @@
         @media screen and (max-width: 1354px) {
           @include size(290px, 410px);
         }
+
         @media screen and (max-width: 1148px) {
           @include size(300px, 435px);
         }
+
         @media screen and (max-width: 632px) {
           @include size(250px, 350px);
         }
@@ -72,14 +76,16 @@
       height: auto;
       right: 6%;
       width: 45%;
+
       @media screen and (max-width: 1354px) {
         min-height: 390px;
       }
+
       @media screen and (max-width: 1021px) {
         margin: 50px auto 0 auto;
         width: 70%;
-
       }
+
       @media screen and (max-width: 632px) {
         width: 100%;
         min-height: 100%;
@@ -94,9 +100,11 @@
         margin-bottom: 0;
         color: $titleTextColor;
         text-shadow: 2px 2px #212228;
+
         @media screen and (max-width: 1354px) {
           font-size: 50px;
         }
+
         @media screen and (max-width: 632px) {
           font-size: 42px;
         }
@@ -107,17 +115,25 @@
         font-weight: 700;
         font-size: 17px;
         letter-spacing: 2px;
+
         @media screen and (max-width: 1354px) {
           font-size: 11px;
         }
+
         @media screen and (max-width: 632px) {
           font-size: 10px;
         }
       }
 
       .textAboutMe {
+        min-height: 120px;
+        //border: 1px solid #82f507;
         padding: 20px 0;
         margin-left: 90px;
+
+        @media screen and (max-width: 632px) {
+          margin: 0;
+        }
 
         span {
           font-family: $titleFontFamily;
@@ -126,6 +142,7 @@
           text-indent: 30px;
           margin: 0;
           line-height: 1.5;
+
           @media screen and (max-width: 632px) {
             font-size: 14px;
           }
@@ -147,7 +164,6 @@
       }
     }
   }
-
 }
 
 

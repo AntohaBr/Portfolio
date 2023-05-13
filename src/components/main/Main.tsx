@@ -62,7 +62,7 @@ export const Main = () => {
     }
 
     return (
-        <div className={s.mainBlock} id={'main'}>
+        <div className={s.mainBlock} id='main'>
             <Particles className={s.particles} init={particlesInit} options={particlesOptions}/>
             <Fade delay={150}>
                 <div className={s.container}>

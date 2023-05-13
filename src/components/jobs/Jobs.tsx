@@ -8,10 +8,10 @@ import {Fade} from 'components/main/Main'
 export const Jobs = () => {
 
     return (
-        <div className={s.jobsBlock} id={'projects'}>
+        <div className={s.jobsBlock} id='projects'>
             <div className={s.container}>
                 <Fade top delay={300}>
-                    <Title text={"Projects"}/>
+                    <Title text= 'Projects'/>
                 </Fade>
                 <div className={s.jobs}>
                     {dataJobs.map(job => (
