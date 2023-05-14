@@ -19,7 +19,7 @@
     @include container();
     @include flex(row, center, center, nowrap);
 
-    @media screen and (max-width: 1021px) {
+    @media screen and (max-width: 1354px) {
       @include flex(column, center, center, wrap);
     }
 
@@ -56,10 +56,6 @@
         }
 
         @media screen and (max-width: 1354px) {
-          @include size(290px, 410px);
-        }
-
-        @media screen and (max-width: 1148px) {
           @include size(300px, 435px);
         }
 
@@ -78,17 +74,9 @@
       width: 45%;
 
       @media screen and (max-width: 1354px) {
-        min-height: 390px;
-      }
-
-      @media screen and (max-width: 1021px) {
-        margin: 50px auto 0 auto;
-        width: 70%;
-      }
-
-      @media screen and (max-width: 632px) {
         width: 100%;
-        min-height: 100%;
+        right: 0;
+        margin: 0;
       }
 
       h1, h6 {
@@ -127,11 +115,10 @@
 
       .textAboutMe {
         min-height: 120px;
-        //border: 1px solid #82f507;
         padding: 20px 0;
         margin-left: 90px;
 
-        @media screen and (max-width: 632px) {
+        @media screen and (max-width: 1354px) {
           margin: 0;
         }
 
@@ -150,11 +137,11 @@
       }
 
       .btnDownloadCv {
-        @include size(150px, 30px);
-        margin: 0 auto;
+        @include size(170px, 30px);
+        margin: 15px auto 0 auto;
 
         a {
-          text-align: center;
+          margin: 0 10%;
           font-family: $titleFontFamily;
           font-weight: 500;
           color: $titleTextColor;

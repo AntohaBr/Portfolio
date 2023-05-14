@@ -42,7 +42,7 @@ export const BurgerNavbar = () => {
                     path='contacts'
                     title='Contacts'
                     onClick={closeMenu}
-                    offset={-15}
+                    offset={-50}
                 />
             </div>
             <FaBars className={s.burgerBtn} onClick={openMenu}/>

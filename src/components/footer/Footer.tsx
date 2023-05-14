@@ -7,7 +7,7 @@ import {Fade} from 'components/main/Main'
 export const Footer = () => {
 
     return (
-        <div className={s.footerBlock} id='contacts'>
+        <div className={s.footerBlock}>
             <Fade delay={150}>
                 <div className={s.container}>
                     <Fade top delay={300}>
