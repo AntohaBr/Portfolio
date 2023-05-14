@@ -13,12 +13,12 @@ export const Navbar = () => {
             <UniversalLink
                 path='skills'
                 title='Skills'
-                offset={-90}
+                offset={-50}
             />
             <UniversalLink
                 path='projects'
                 title='Projects'
-                offset={-80}
+                offset={-50}
             />
             <UniversalLink
                 path='contacts'
